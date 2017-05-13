@@ -18,9 +18,11 @@ email: phocks@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A website that displays quotations etc.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://quoke.ga" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://quoke.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: phocks
 github_username:  phocks
+encoding: utf-8
+timezone: Australia/Brisbane
 
 # Build settings
 markdown: kramdown
