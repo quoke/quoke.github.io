@@ -1,13 +1,12 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: Quoke - a few quotations
+author: Joshua Byrd
+email: phocks@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is an openly editable repository for famous quotations
+  about different things in the world.
 
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: phocks
+github_username:  phocks
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
