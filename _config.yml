@@ -25,9 +25,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-plugins_dir:
- - jekyll-coffeescript
- 
 permalink: /:title.html
+
+plugins:
+ - jekyll-coffeescript
 
 # gems: [jekyll-coffeescript]
