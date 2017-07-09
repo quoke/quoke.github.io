@@ -1,12 +1,12 @@
 title: Quoke
 author: Joshua Byrd
 email: phocks@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines until the next thing
   This is an openly editable repository for famous quotations
   about different things in the world.
 
 twitter_username: phocks
-github_username:  phocks
+github_username: phocks
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

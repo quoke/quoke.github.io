@@ -6,4 +6,3 @@
 #
 layout: home
 ---
-<script src="hello.js"></script>
