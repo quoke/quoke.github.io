@@ -16,6 +16,7 @@ GEM
     colorator (1.1.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.5.0)
       addressable (~> 2.4)
@@ -50,14 +51,17 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.24)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   bundler (~> 1.12)
   jekyll-coffeescript
   minima!
+  wdm (~> 0.1.1)
 
 BUNDLED WITH
    1.15.1
