@@ -28,6 +28,6 @@ exclude:
 permalink: /:title.html
 
 plugins:
- - jekyll-coffeescript
+  - jekyll-coffeescript
 
 # gems: [jekyll-coffeescript]
