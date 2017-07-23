@@ -6,3 +6,20 @@
 #
 layout: home
 ---
+
+<style>
+body {
+  background-color: black;
+  color: white;
+}
+h1 {
+  font-size: 256px;
+}
+</style>
+
+# Quoke
+
+<script>
+console.log('hello')
+</script>
+
