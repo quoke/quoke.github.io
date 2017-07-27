@@ -7,8 +7,11 @@
 layout: home
 ---
 
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet"> 
+
 <style>
 body {
+  font-family: 'Zilla Slab', serif;
   background-color: black;
   color: white;
 }
