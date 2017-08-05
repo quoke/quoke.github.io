@@ -10,6 +10,7 @@ layout: home
 <style>
 body {
   background-color: black;
+  background: url(/public/trip.gif);
   color: white;
 }
 h1 {
