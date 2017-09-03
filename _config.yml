@@ -31,3 +31,8 @@ plugins:
   - jekyll-coffeescript
 
 # gems: [jekyll-coffeescript]
+
+collections:
+  quotations:
+    output: true
+    permalink: /:name
