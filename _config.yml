@@ -20,12 +20,16 @@ minima:
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
 
-permalink: /:title.html
+# Set theme color here
+# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
+theme_color: black
+
+# permalink: /:title.html
 
 plugins:
   - jekyll-coffeescript
