@@ -37,9 +37,11 @@ plugins:
 # gems: [jekyll-coffeescript]
 
 collections:
+
   quotations:
     output: true
     permalink: /:name
+    
   users:
     output: true
     permalink: /@:name
