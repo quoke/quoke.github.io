@@ -57,6 +57,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -66,6 +67,7 @@ DEPENDENCIES
   bundler (~> 1.12)
   jekyll-coffeescript
   minima!
+  wdm (~> 0.1.1)
 
 BUNDLED WITH
    1.16.0
