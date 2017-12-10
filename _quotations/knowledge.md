@@ -1,6 +1,6 @@
 ---
 name: knowledge
-layout: post
+layout: page
 ---
 
 Hello.
