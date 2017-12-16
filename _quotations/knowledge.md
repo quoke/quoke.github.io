@@ -3,7 +3,7 @@ name: knowledge
 description: There is no knowledge that is not power.
 author: Midway Games
 source: Mortal Kombat
-layout: quotation
+layout: default
 permalink: /there-is-no-knowledge
 ---
 
