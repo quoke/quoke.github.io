@@ -70,7 +70,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bootstrap (~> 4.0.0.alpha6)
+  bootstrap (~> 4.0.0.beta2)
   bundler (~> 1.12)
   jekyll-coffeescript
   minima!

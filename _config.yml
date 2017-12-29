@@ -33,6 +33,7 @@ theme_color: black
 
 plugins:
   - jekyll-coffeescript
+  - bootstrap
 
 # gems: [jekyll-coffeescript]
 
