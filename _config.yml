@@ -39,7 +39,7 @@ plugins:
 collections:
   quotations:
     output: true
-    permalink: /:name
+    permalink: /quotes/:name
   users:
     output: true
     permalink: /@:name
