@@ -40,7 +40,7 @@ plugins:
 collections:
   quotations:
     output: true
-    permalink: /quotes/:name
+    permalink: /q/:name
   users:
     output: true
     permalink: /@:name
