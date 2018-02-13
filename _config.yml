@@ -25,10 +25,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-# Set theme color here
-# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: black
-
 # permalink: /:title.html
 
 plugins:
