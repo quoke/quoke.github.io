@@ -1,16 +1,12 @@
-.q-home {
-  min-height: 100vh;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.q-title {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.bg-black {
-  background-color: black;
-}
-
-.bg-almost-black {
-  background-color: #040404;
+  height: 100vh;
 }
