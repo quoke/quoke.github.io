@@ -4,6 +4,10 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+p {
+  margin-top: 0;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
