@@ -51,8 +51,19 @@ ul.quote-list a {
   text-decoration: none;
 }
 
+blockquote {
+  max-width: 700px;
+}
+
+blockquote p {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
 blockquote footer {
-  // font-weight: bold;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 // .quote {
