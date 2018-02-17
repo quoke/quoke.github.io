@@ -17,6 +17,19 @@ p {
   min-height: 100vh;
 }
 
-blockquote footer::before {
+blockquote footer {
+  // font-weight: bold;
+}
+
+// .quote {
+//   margin: auto;
+//   display: block;
+//   max-width: 100vh;
+//   height: 100vw;
+//   max-height: 100vh;
+//   background-color: darksalmon;
+// }
+
+blockquote footer:before {
   content: "\2014 \00A0";
 }
