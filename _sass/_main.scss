@@ -25,6 +25,10 @@ a {
   color: white;
 }
 
+.footer h3 {
+  display: inline-block;
+}
+
 h1.site-title {
   font-size: 32px;
   display: inline-block;
@@ -47,13 +51,13 @@ ul.quote-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: inline;
   font-size: 26px;
   background-color: azure;
 }
 
 ul.quote-list li {
-  display: inline-block;
+  display: inline;
 }
 
 ul.quote-list a {
