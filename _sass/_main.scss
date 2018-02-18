@@ -34,11 +34,7 @@ h1.site-title a {
   text-decoration: none;
 }
 
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.quote-container {
   min-height: 100vh;
 }
 
@@ -68,6 +64,7 @@ ul.quote-list a {
 blockquote {
   max-width: 700px;
   margin: 0;
+  margin-top: 10vh;
 }
 
 blockquote p {
@@ -87,9 +84,22 @@ blockquote footer:before {
 
 // Larger than mobile styles
 @media (min-width: 576px) {
+  .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  blockquote {
+    margin-top: 0;
+  }
+
   blockquote p {
     font-size: 22px;
   }
+
   blockquote footer {
     font-size: 18px;
   }
