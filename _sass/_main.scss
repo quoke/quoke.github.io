@@ -54,12 +54,13 @@ ul.quote-list {
   margin: 0;
   padding: 0;
   display: inline-block;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 ul.quote-list li {
   display: inline-block;
   background-color: #f9f9f9;
+  margin-bottom: 4px;
 }
 
 ul.quote-list a {
@@ -96,6 +97,10 @@ blockquote footer:before {
     flex-direction: column;
     min-height: 100vh;
     padding-top: 0;
+  }
+
+  ul.quote-list {
+    font-size: 28px;
   }
 
   blockquote {
