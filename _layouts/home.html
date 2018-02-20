@@ -10,23 +10,12 @@
     </h1>
     <div class="separator inline-block">/</div>
     <ul class="quote-list">
-      {% for item in site.quotations %}
+      {% for quote in site.quotations %}
       <li>
-        <a href="{{ item.url }}">{{ item.title }}...</a>
+        <a href="{{ quote.url }}">{{ quote.title }}...</a>
       </li>
-      {% endfor %}</ul>
-
-
-    <!-- <ul class="quote-list">
-      <li>
-        <a href="/heres-to-the-crazy-ones">Here's to the crazy ones...</a>
-      </li>
-      <li>
-        <a href="/im-selfish-impatient-and-a-little-insecure">I'm selfish, impatient and a little insecure...</a>
-      </li>
+      {% endfor %}
     </ul>
-  </div> -->
-
     {% include foot.html %}
 </body>
 
