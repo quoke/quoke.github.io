@@ -32,6 +32,7 @@ a {
 h1.site-title {
   font-size: 32px;
   display: inline-block;
+  margin-bottom: 0;
 }
 
 h1.site-title a {
@@ -47,6 +48,7 @@ h1.site-title a {
 .separator {
   font-size: 32px;
   display: inline-block;
+  margin-right: 5px;
 }
 
 ul.quote-list {
@@ -58,14 +60,18 @@ ul.quote-list {
 }
 
 ul.quote-list li {
-  display: inline-block;
-  background-color: #f9f9f9;
-  margin-bottom: 4px;
+  display: inline;
+  line-height: 1.5em;
 }
 
 ul.quote-list a {
+  background-color: #eeeeee;
   color: black;
   text-decoration: none;
+}
+
+ul.quote-list a:hover {
+  background-color: #dddddd;
 }
 
 blockquote {
