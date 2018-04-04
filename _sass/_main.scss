@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  // background-color: black;
+  background-color: black;
   height: 100%;
   padding: 0;
   overflow: auto;
@@ -36,6 +36,10 @@ nav > h1 {
 
 nav > h1 > a {
   color: midnightblue;
+}
+
+.home-container {
+  margin: 64px auto
 }
 
 h1.site-title {
@@ -108,9 +112,10 @@ ul.quote-list a:hover {
 }
 
 blockquote {
-  color: MEDIUMVIOLETRED;
-  max-width: 700px;
+  text-align: center;
+  // max-width: 700px;
   margin: 0;
+  color: mediumspringgreen;
 }
 
 blockquote a {
@@ -119,7 +124,7 @@ blockquote a {
 
 blockquote p {
   margin-top: 0;
-  font-size: 18px;
+  font-size: 26px;
   // font-weight: 200;
   line-height: 1.3em;
 }
@@ -129,43 +134,43 @@ blockquote footer {
   font-size: 16px;
 }
 
-blockquote footer:before {
-  content: "\2014 \00A0";
-}
+// blockquote footer:before {
+//   content: "\2014 \00A0";
+// }
 
-// Larger than mobile styles
-@media (min-width: 576px) {
-  .quote-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-top: 0;
-  }
+// // Larger than mobile styles
+// @media (min-width: 576px) {
+//   .quote-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     min-height: 100vh;
+//     padding-top: 0;
+//   }
 
-  ul.quote-list {
-    font-size: 28px;
-  }
+//   ul.quote-list {
+//     font-size: 28px;
+//   }
 
-  blockquote {
-  }
+//   blockquote {
+//   }
 
-  blockquote p {
-    font-size: 22px;
-  }
+//   blockquote p {
+//     font-size: 22px;
+//   }
 
-  blockquote footer {
-    font-size: 18px;
-  }
-}
+//   blockquote footer {
+//     font-size: 18px;
+//   }
+// }
 
-// Special iPhone 5 and small device styles
-@media (max-width: 320px) {
-  blockquote p {
-    font-size: 16px;
-  }
-  blockquote footer {
-    font-size: 16px;
-  }
-}
+// // Special iPhone 5 and small device styles
+// @media (max-width: 320px) {
+//   blockquote p {
+//     font-size: 16px;
+//   }
+//   blockquote footer {
+//     font-size: 16px;
+//   }
+// }
