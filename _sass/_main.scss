@@ -4,6 +4,7 @@
 //   width: 100%;
 //   overflow: hidden;
 // }
+$color-border: lavenderblush;
 
 // Box sizing reset
 html {
@@ -37,6 +38,18 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  background: #ede574; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e1f5c4,
+    #ede574
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e1f5c4,
+    #ede574
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .site-content {
@@ -46,7 +59,7 @@ body {
 nav {
   background-color: white;
   width: 100%;
-  border-bottom: 1px solid lavenderblush;
+  border-bottom: 1px solid $color-border;
   text-align: center;
 }
 
@@ -63,17 +76,6 @@ nav > h1 > a {
 
 .intro-container {
   margin: 0;
-  background: #396afc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #2948ff,
-    #396afc
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #2948ff,
-    #396afc
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   overflow: hidden;
   text-align: center;
@@ -82,16 +84,16 @@ nav > h1 > a {
   color: white;
   max-width: 700px;
   margin: auto;
-  text-align: left;
-  padding: 15px;
-  font-size: 24px;
+  // text-align: left;
+  padding: 64px 15px;
+  font-size: 32px;
 }
 
 footer {
+  border-top: 1px solid $color-border;
   font-size: 12px;
   text-align: center;
   background-color: white;
-  margin-bottom: 5px;
 }
 // h1.site-title {
 // // position: relative;
