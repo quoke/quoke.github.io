@@ -21,6 +21,16 @@ body {
 //   text-decoration: none;
 // }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
 nav {
   background-color: white;
   width: 100%;
@@ -39,19 +49,21 @@ nav > h1 > a {
   text-decoration: none;
 }
 
-.home-container {
- background-color: darkslateblue;
- height: 700px;
+footer {
+  font-size: 12px;
+  text-align: center;
+
 }
 
-h1.site-title {
-  // position: relative;
-  // top: -12px;
-  font-size: 32px;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
+// h1.site-title {
+//   // position: relative;
+//   // top: -12px;
+//   font-size: 32px;
+//   display: inline-block;
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
 
 h1.site-title a {
   text-decoration: none;
