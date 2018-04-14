@@ -6,3 +6,5 @@
 #
 layout: home
 ---
+
+This is some content.
