@@ -5,10 +5,10 @@
 
 <body>
   <div class="site">
+    {% include navigation.html %}
     <div class="site-content">
-      {% include navigation.html %}
       {% include intro.html %}
-      {{ content }}
+      <div class="lead">{{ content }}</div>
     </div>
     {% include footer.html %} 
     {% include foot.html %}

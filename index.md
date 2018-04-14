@@ -7,4 +7,7 @@
 layout: home
 ---
 
-This is some content.
+here  
+are  
+some  
+quotations...
