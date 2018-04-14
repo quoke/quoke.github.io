@@ -11,3 +11,5 @@ here
 are  
 some  
 quotations...
+
+<span class="vertical-text">&gt;</span>
