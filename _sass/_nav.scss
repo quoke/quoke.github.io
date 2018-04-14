@@ -1,0 +1,16 @@
+nav {
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid $color-border;
+}
+
+nav > h1 {
+  font-family: "Press Start 2P", sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+nav > h1 > a {
+  color: midnightblue;
+  text-decoration: none;
+}

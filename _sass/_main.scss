@@ -1,7 +1,8 @@
-@import "utils";
-
 // Some variables
 $color-border: lavenderblush;
+
+@import "utils";
+@import "nav";
 
 body {
   margin: 0;
@@ -30,40 +31,27 @@ body {
     #ede574
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .site-content {
   flex: 1;
 }
-nav {
-  background-color: white;
-  width: 100%;
-  border-bottom: 1px solid $color-border;
-  text-align: center;
-}
-nav > h1 {
-  font-family: "Press Start 2P", sans-serif;
-  margin: 0;
-  padding: 10px;
-}
-nav > h1 > a {
-  color: midnightblue;
-  text-decoration: none;
-}
+
 .intro-container {
   margin: 0;
   overflow: hidden;
   text-align: center;
 }
+
 .intro {
   color: white;
   max-width: 700px;
   margin: auto;
-  // text-align: left;
   padding: 64px 15px;
   font-size: 32px;
 }
+
 footer {
   border-top: 1px solid $color-border;
   font-size: 12px;
-  text-align: center;
   background-color: white;
 }
