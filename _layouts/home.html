@@ -10,12 +10,66 @@
       {% include intro.html %}
       <div class="lead">{{ content }}</div>
     </div>
-    <div class="pre-fold"><span class="vertical-text pixel-font">&gt;</span></div>
+    <div class="pre-fold">
+      <span class="vertical-text pixel-font">&gt;</span>
+    </div>
   </div>
-  <div>Coming soon...</div>
-  {% include footer.html %} 
-  {% include foot.html %}
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Signika');
+    .heres-to-the-crazy-ones {
+      background-color: rgb(50, 66, 110);
+      background-image: url(/public/img/heres-to-the-crazy-ones.svg);
+      background-size: 300px;
+      background-blend-mode: lighten;
+      background-position: 10% 10%;
+      background-repeat: space;
+      display: inline-block;
+      font-family: 'Signika', sans-serif;
+    }
+    .heres-to-the-crazy-ones p {
+      color: rgb(255, 255, 255);
+      mix-blend-mode: difference;
+      text-align: left;
+    }
+    .heres-to-the-crazy-ones a {
+      color: white;
+      mix-blend-mode: luminosity;
+    }
+    
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .heres-to-the-crazy-ones {
+        font-size: 32px
+      }
+    }
+
+   
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .heres-to-the-crazy-ones {
+        font-size: 64px
+      }
+    }
+  </style>
+  <div class="heres-to-the-crazy-ones">
+    <blockquote class="long">
+      <p>Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones
+        who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote
+        them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they
+        change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because
+        the people who are crazy enough to think they can change the world, are the ones who do.</p>
+      <footer>
+        <a href="https://en.wikipedia.org/wiki/Think_different">Rob Siltanen & Apple Inc.</a>
+      </footer>
+    </blockquote>
+  </div>
+
+  {% include footer.html %} {% include foot.html %}
 </body>
+
 </html>
 
 
