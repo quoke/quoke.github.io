@@ -16,16 +16,16 @@
   </div>
 
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700');
+    @import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700|Berkshire+Swash');
     .heres-to-the-crazy-ones {
       background-color: rgb(50, 66, 110);
       background-image: url(/public/img/heres-to-the-crazy-ones.svg);
       background-size: 20vmax;
       background-blend-mode: hue;
-      background-repeat: space;
+      background-repeat: round;
       font-family: 'Signika Negative', sans-serif;
       padding: 48px 38px 72px;
-      font-size: 22px;
+      font-size: 19px;
     }
     .heres-to-the-crazy-ones blockquote {
       margin: 10px auto;
@@ -38,13 +38,15 @@
     }
     .heres-to-the-crazy-ones a {
       color: white;
-      mix-blend-mode: luminosity;
+      mix-blend-mode: difference;
     }
-    .heres-to-the-crazy-ones span.different {
-      background-color: white;
-      color: rgb(0, 0, 0);
+    .heres-to-the-crazy-ones blockquote p span.inverse {
+      background-color: rgb(19, 202, 13);
+      color: rgb(37, 124, 196);
     }
-
+    .heres-to-the-crazy-ones blockquote p span.crazy {
+      font-family: 'Berkshire Swash', cursive;
+    }
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
       .heres-to-the-crazy-ones {
@@ -62,10 +64,10 @@
   <div class="heres-to-the-crazy-ones">
     <blockquote class="long">
       <p>Here's to the crazy ones. <big><strong>The misfits</strong></big>. The rebels. The troublemakers. The round pegs in the square holes. The ones
-        who <span class="different">see things differently</span>. They're not fond of rules. And they have no respect for the status quo. You can quote
-        them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they
-        change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because
-        the people who are crazy enough to think they can change the world, are the ones who do.</p>
+        who <span class="inverse">see things differently</span>. They're not fond of rules. And they have no respect for the status quo. You can <a href="//quoke.co">quote
+        them</a>, disagree with them, <em>glorify</em> or <small>vilify them</small>. About the only thing you can't do is <del>ignore them</del>. Because they
+        <em>change things</em>. They push the human race forward. And while some may see them as the <span class="crazy"><big>crazy ones</big></span>, we see genius. Because
+        the people who are crazy enough to think they can <span class="inverse">change the world</span>, <small>are the ones who do.</p>
       <footer>
         <a href="https://en.wikipedia.org/wiki/Think_different">Rob Siltanen &amp; Apple Inc.</a>
       </footer>
