@@ -15,6 +15,15 @@
     </div>
   </div>
 
+  <ul class="quote-list">
+    {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+    {% for quote in sortedQuotations %}
+    <li class="quote">
+      <a href="{{ quote.url }}">{{ quote.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
  {% include foot.html %}
 </body>
 

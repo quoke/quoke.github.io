@@ -28,6 +28,9 @@ body {
 .home-content {
   flex: 1;
   padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .intro-container {
   margin: 0;
@@ -43,9 +46,10 @@ body {
 }
 
 .lead {
-  font-family: "Press Start 2P", sans-serif;
-  color: midnightblue;
-  line-height: 1.3em;
+  font-family: Karla, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
 }
 .pre-fold {
   padding-bottom: 24px;
@@ -54,6 +58,23 @@ footer.site-footer {
   border-top: 1px solid $color-border;
   font-size: 12px;
   background-color: white;
+}
+
+.quote-list {
+  list-style: none;
+  padding: 30px;
+}
+li.quote {
+  display: inline-block;
+  background-color: #eee;
+  padding: 5px;
+  margin: 5px 3px;
+  font-weight: bold;
+}
+
+li.quote a {
+  color: black;
+  text-decoration: none;
 }
 
 @import "responsive";
