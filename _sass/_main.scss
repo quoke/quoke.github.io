@@ -20,17 +20,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
 
-  background: #ede574; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #e1f5c4,
-    #ede574
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e1f5c4,
-    #ede574
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FFAFBD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .home-content {
   flex: 1;

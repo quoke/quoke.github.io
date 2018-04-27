@@ -6,8 +6,3 @@
 #
 layout: home
 ---
-
-here  
-are  
-some  
-quotations...
