@@ -4,11 +4,14 @@
 {% include head.html %}
 
 <body>
-  <div class="simple-quote">
-    <blockquote class="quote-{{ page.size }}">
-        <p>{{ page.text }}</p>
-          <footer>{{ page.author }}</footer>
-      </blockquote>
+  <div class="quote">
+    {% include navigation.html %}
+    <div class="quote-content">
+      <div class="quote-{{ page.size }}">
+        <div>&ldquo;{{ page.text }}&rdquo; {% if page.author %}
+          <small>&mdash;{{ page.author }}</small>{% endif %}</div>
+      </div>
+    </div>
   </div>
   {% include foot.html %}
 </body>
