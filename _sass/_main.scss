@@ -14,7 +14,13 @@ body {
   line-height: normal;
 }
 
-// Sticky footer stuff
+.flex {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
 .home {
   display: flex;
   min-height: 100vh;

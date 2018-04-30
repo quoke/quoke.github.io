@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <body>
-  <div>
+  <div class="flex">
     {% include navigation.html %}
     <ul class="quote-list">
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %} {% for quote in sortedQuotations %}

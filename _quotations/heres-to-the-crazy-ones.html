@@ -1,5 +1,5 @@
 ---
-layout: quote
+layout: quotation
 title: Here's to the crazy ones
 date: 2018-02-16
 text: Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They’re not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can’t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.
@@ -9,9 +9,10 @@ author: Rob Siltanen
 <style>
     @import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700|Berkshire+Swash');
     .heres-to-the-crazy-ones {
-      min-height: 100vh;
+      min-height: 100%;
       display: flex;
       align-items: center;
+      flex: 1;
       /* justify-content: center; */
 
       background-color: rgb(50, 66, 110);
@@ -36,7 +37,7 @@ author: Rob Siltanen
     .heres-to-the-crazy-ones p {
       color: rgb(255, 255, 255);
       mix-blend-mode: difference;
-      text-align: left;
+      /* text-align: left; */
     }
   
     .heres-to-the-crazy-ones footer {
@@ -44,6 +45,7 @@ author: Rob Siltanen
       font-weight: bold;
       mix-blend-mode: difference;
       font-size: 120%;
+      padding-top: 13px;
     }
   
     .heres-to-the-crazy-ones blockquote p span.inverse {
@@ -76,7 +78,7 @@ author: Rob Siltanen
   <blockquote class="long">
     <p>Here's to the <span class="crazy"><big>crazy ones</big>.</span><big><strong>The misfits</strong></big>. The rebels. The troublemakers. The round pegs in the square holes. The ones who <span class="inverse"><strong>see things differently</strong></span>. They're not fond of rules. And they have no respect for the status quo. You can <a href="//quoke.co">quote them </a>, disagree with them, <em>glorify</em> or <small>vilify them</small>. About the only thing you can't do is <del>ignore them</del>. Because they<em> <strong>change things</strong></em>. They push the human race forward. And while some may see them as the <span class="crazy"> <big>crazy ones</big></span>, we see genius. Because the people who are crazy enough to think they can <span class="inverse"><strong>change the world</strong></span>, <em>are the ones who do.</em></p>
     <footer>
-      &mdash;Rob Siltanen <!-- &amp; Apple Inc. -->
+      Rob Siltanen <!-- &amp; Apple Inc. -->
     </footer>
   </blockquote>
 </div>
