@@ -10,19 +10,19 @@
       
       <div class="lead">{{ content }}</div>
     </div>
-    <div class="pre-fold">
+    <!-- <div class="pre-fold">
       <span class="vertical-text pixel-font">&gt;</span>
-    </div>
+    </div> -->
   </div>
 
-  <ul class="quote-list">
+  <!-- <ul class="quote-list">
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
     <li>
       <a href="{{ quote.url }}">{{ quote.title }}</a>
     </li>
     {% endfor %}
-  </ul>
+  </ul> -->
 
  {% include foot.html %}
 </body>

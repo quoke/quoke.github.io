@@ -4,19 +4,17 @@
 {% include head.html %}
 
 <body>
-    <h1 class="site-title">
-      <a href="/">Quoke</a>
-    </h1>
-    <div class="separator inline-block">/</div>
+  <div>
+    {% include navigation.html %}
     <ul class="quote-list">
-        {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
-      {% for quote in sortedQuotations %}
+      {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %} {% for quote in sortedQuotations %}
       <li>
         <a href="{{ quote.url }}">{{ quote.title }}...</a>
       </li>
       {% endfor %}
     </ul>
-    {% include foot.html %}
+  </div>
+  {% include foot.html %}
 </body>
 
 </html>
