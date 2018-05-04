@@ -9,7 +9,7 @@
     <ul class="quote-list">
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %} {% for quote in sortedQuotations %}
       <li>
-        <a href="{{ quote.url }}">{{ quote.title }}...</a>
+        <a href="{{ quote.url }}">{{ quote.title }}</a>
       </li>
       {% endfor %}
     </ul>
