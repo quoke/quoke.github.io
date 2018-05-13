@@ -2,7 +2,9 @@ nav {
   background-color: transparent;
   width: 100%;
   border-bottom: 1px solid $color-border;
-  padding: 4px;
+  padding: 8px;
+  display: flex;
+align-items: center;
 }
 
 nav > h1 {
@@ -11,6 +13,7 @@ nav > h1 {
   padding: 3px 3px 0;
   font-size: 32px;
   font-weight: normal;
+  display: inline-block;
 }
 
 nav > h1 > a {
