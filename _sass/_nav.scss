@@ -1,18 +1,19 @@
 nav {
-  background-color: white;
+  background-color: transparent;
   width: 100%;
   border-bottom: 1px solid $color-border;
+  padding: 4px;
 }
 
 nav > h1 {
   font-family: "Press Start 2P", sans-serif;
   margin: 0;
-  padding: 10px;
+  padding: 3px 3px 0;
   font-size: 32px;
   font-weight: normal;
 }
 
 nav > h1 > a {
-  color: midnightblue;
+  color: black;
   text-decoration: none;
 }

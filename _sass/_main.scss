@@ -1,5 +1,5 @@
 // Some variables
-$color-border: lavenderblush;
+$color-border: #eee;
 
 @import "utils";
 @import "nav";
@@ -10,7 +10,7 @@ body {
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   font-size: 16px;
-  text-align: center;
+  // text-align: center;
   line-height: normal;
 }
 
@@ -25,11 +25,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-
-  background: #FFAFBD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: white;
 }
 .home-content {
   flex: 1;

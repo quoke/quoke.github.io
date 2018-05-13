@@ -21,9 +21,8 @@ minima:
 # Build settings
 markdown: kramdown
 # theme: minima
-exclude:
-  - Gemfile
-  - Gemfile.lock
+
+exclude: [Gemfile, Gemfile.lock, node_modules, gulpfile.js]
 
 # permalink: /:title.html
 
