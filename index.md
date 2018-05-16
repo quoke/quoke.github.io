@@ -7,4 +7,3 @@
 layout: home
 ---
 
-<a href="/quotes">QUOKE?</a>

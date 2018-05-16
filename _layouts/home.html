@@ -4,18 +4,24 @@
 {% include head.html %}
 
 <body>
-  <div class="home">
+  <header>
     {% include navigation.html %}
-    <div class="home-content">
-      
-      <div class="lead">{{ content }}</div>
-    </div>
-    <!-- <div class="pre-fold">
-      <span class="vertical-text pixel-font">&gt;</span>
-    </div> -->
-  </div>
+  </header>
+  <section>
+    <h1>Quoke</h1>
 
-  <!-- <ul class="quote-list">
+    {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+    {% for quote in sortedQuotations %}
+     <p>{{ quote.text }}</p>
+    {% endfor %}
+
+    {{ content }}
+  </section>
+ {% include foot.html %}
+</body>
+
+</html>
+ <!-- <ul class="quote-list">
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
     <li>
@@ -23,13 +29,9 @@
     </li>
     {% endfor %}
   </ul> -->
-
- {% include foot.html %}
-</body>
-
-</html>
-
-
+ <!-- <div class="pre-fold">
+      <span class="vertical-text pixel-font">&gt;</span>
+    </div> -->
 
 
 <!-- <div class="container">

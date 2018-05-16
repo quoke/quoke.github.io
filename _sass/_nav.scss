@@ -2,7 +2,7 @@ nav {
   background-color: transparent;
   width: 100%;
   border-bottom: 1px solid $color-border;
-  padding: 8px;
+  padding: 8px $page-gutter;
   display: flex;
 align-items: center;
 }
