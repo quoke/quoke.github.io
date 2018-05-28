@@ -3,30 +3,12 @@
 
 {% include head.html %}
 <body class="home">
-    
-  <header>
-    {% include navigation.html %}
-  </header>
   <section>
-
-      
-      <!-- <h1>Then suddenly the white flashes of the Heat-Ray came leaping towards me.</h1>
-
-      <p><strong>The houses caved</strong> in as they dissolved at its touch, and darted out flames; the trees changed to fire with a roar. The Ray flickered up and down the towing path, licking off the people who ran this way and that, and came down to the water's edge not fifty yards from where I stood.</p>
-      <p>It swept across the river to Shepperton, and the water in its track rose in a boiling weal crested with steam. I turned shoreward.
-      In another moment the huge wave, <a href="#">well-nigh at the boiling-point had rushed upon me</a>.</p>
-      <p>I screamed aloud, and scalded, half blinded, agonised, I staggered through the leaping, hissing water towards the shore. Had my foot stumbled, it would have been the end. I fell helplessly, in full sight of the Martians, upon the broad, bare gravelly spit that runs down to mark the angle of the Wey and Thames. I expected nothing but death.</p> -->
-
-    <!-- {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %} {% for quote in sortedQuotations %}
-    <blockquote>
-      <p>
-        &ldquo;{{ quote.text}}&rdquo;
-      </p>
-    </blockquote>
-      {% endfor %} -->
-    
     {{ content }}
   </section>
+  <!-- <header>
+    {% include navigation.html %}
+  </header> -->
   {% include foot.html %}
 </body>
 
@@ -42,18 +24,3 @@
  <!-- <div class="pre-fold">
       <span class="vertical-text pixel-font">&gt;</span>
     </div> -->
-
-
-<!-- <div class="container">
-    <h1 class="site-title">
-      <a href="/">QUOKE</a>
-    </h1>
-    <div class="separator inline-block">/</div>
-    <ul class="quote-list">
-        {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
-      {% for quote in sortedQuotations %}
-      <li>
-        <a href="{{ quote.url }}">{{ quote.title }}...</a>
-      </li>
-      {% endfor %}
-    </ul> -->
