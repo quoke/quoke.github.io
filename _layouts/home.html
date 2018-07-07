@@ -7,7 +7,12 @@
     {% include navigation.html %}
   </header>
   <section>
-    {{ content }}
+   <ul class="quote-list">
+    {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+    {% for quote in sortedQuotations %}
+      {{quote.content}}
+    {% endfor %}
+  </ul>
   </section>
   {% include foot.html %}
 </body>
