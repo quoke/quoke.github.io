@@ -10,7 +10,9 @@
    <ul class="quote-list">
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
-      {{quote.content}}
+      {% if quote.tags contains 'featured' %}
+       {{quote.content}}
+      {% endif %}
     {% endfor %}
   </ul>
   </section>
