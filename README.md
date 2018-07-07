@@ -1,6 +1,6 @@
 # Quoke
 
-This is a website that will showcase quotations and web typography etc.
+A website that showcases quotations and web typography etc.
 
 To submit your own favourite quotation please fork this repo and make a pull request with your html file added to the `_quotations` directory. Make the file look like this:
 
@@ -23,15 +23,17 @@ tags: featured
     padding: 5em 15px 5.2em;
     text-align: center;
   }
+
   div.every-book-is-a-quotation div.inner-text {
     max-width: 960px;
     margin: auto;
   }
+
   @media (min-width: 992px) {
     div.every-book-is-a-quotation {
       font-size: 48px;
     }
-    }
+  }
 </style>
 
 <div class="every-book-is-a-quotation">
