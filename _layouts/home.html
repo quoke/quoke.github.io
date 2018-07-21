@@ -8,12 +8,16 @@
   </header>
   <section>
    <ul class="quote-list">
+     
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
       {% if quote.tags contains 'featured' %}
-       {{quote.content}}
+       <div>{{quote.content}}</div>
+       <!-- <div>Test</div> -->
       {% endif %}
     {% endfor %}
+  
+  
   </ul>
   </section>
   {% include footer.html %}
