@@ -13,7 +13,7 @@
     {% for quote in sortedQuotations %}
       {% if quote.tags contains 'featured' %}
        <div>{{quote.content}}</div>
-       <!-- <div>Test</div> -->
+       
       {% endif %}
     {% endfor %}
   
@@ -25,6 +25,9 @@
 </body>
 
 </html>
+
+
+
  <!-- <ul class="quote-list">
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
@@ -36,3 +39,18 @@
  <!-- <div class="pre-fold">
       <span class="vertical-text pixel-font">&gt;</span>
     </div> -->
+
+
+    <!-- <div class="wrap-collapsible">
+          <input id="{{quote.slug}}" class="toggle" type="checkbox">
+          <label for="{{quote.slug}}" class="lbl-toggle" tabindex="0">More Info</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                plug-ins. Test-Driven Development.
+              </p>
+            </div>
+          </div>
+        </div> -->
