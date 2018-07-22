@@ -12,8 +12,10 @@
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
       {% if quote.tags contains 'featured' %}
-       <div>{{quote.content}}</div>
-       
+       <div class="quote-container">
+         {{quote.content}}
+         <!-- <span class="view-more"><a href="/{{quote.slug}}">ⓘ</a></span> -->
+        </div>
       {% endif %}
     {% endfor %}
   
