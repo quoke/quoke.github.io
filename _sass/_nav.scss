@@ -1,20 +1,18 @@
 nav {
   background-color: transparent;
   width: 100%;
-  // border-bottom: 1px solid $color-border;
-  padding: 8px $page-gutter;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 9px 0px 6px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 nav > h1 {
   font-family: "Press Start 2P", sans-serif;
   margin: 0;
-  padding: 3px 3px 0;
+  padding: 0 $page-gutter;
   font-size: 32px;
   font-weight: normal;
-  display: inline-block;
+  text-align: left;
 }
 
 nav > h1 > a {

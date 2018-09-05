@@ -9,36 +9,28 @@ $page-gutter: 15px;
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   line-height: normal;
   color: black;
 }
 
 .quote-list {
-  padding: 0;
+  padding: 0 $page-gutter;
   margin: 0;
+
+  text-align: center;
 }
 
 .quote-container {
+  font-size: 28px;
+  // max-width: 700px;
   position: relative;
-}
-
-.view-more {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  transform: translate(-50%, 0);
-  mix-blend-mode: difference;
-}
-
-.view-more a {
-  color: rgba(255, 255, 255, 0.2);
-  text-decoration: none;
-}
-
-.view-more a:hover {
-  color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @import "responsive";
