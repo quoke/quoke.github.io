@@ -12,7 +12,7 @@
         {% if true or quote.tags contains 'featured' %}
         <p>
           <div class="quote-container">
-            {{quote.text}}
+            <a href="{{ quote.url }}">{{quote.text}}</a>
           </div>
         </p>
         {% endif %}

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {% include head.html %}
-
 <body>
   <div class="quote">
     {% include navigation.html %}
-    <div class="quote-container">
-        {{content}}
-    </div>
-    <!-- <div class="quote-content">
+    <!-- <div>
+        {{ page.text }}
+    </div> -->
+    <div class="quote-content">
       <div class="quote-{{ page.size }}">
         <div>&ldquo;{{ page.text }}&rdquo; {% if page.author %}
           <small>&mdash;{{ page.author }}</small>{% endif %}</div>
       </div>
-    </div> -->
+    </div>
   </div>
   {% include foot.html %}
 </body>

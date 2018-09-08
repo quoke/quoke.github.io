@@ -18,19 +18,32 @@ body {
 .quote-list {
   padding: 0 $page-gutter;
   margin: 0;
+}
 
-  text-align: center;
+.quote-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.quote-list a:visited {
+  color: black;
 }
 
 .quote-container {
   font-size: 28px;
-  // max-width: 700px;
   position: relative;
   margin: auto;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.quote-content {
+  padding: 20px $page-gutter;
+  font-size: 32px;
+  line-height: 1.5em;
+  // max-width: 960px;
 }
 
 @import "responsive";
