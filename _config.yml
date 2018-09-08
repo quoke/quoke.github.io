@@ -46,7 +46,7 @@ plugins:
 collections:
   quotations:
     output: true
-    permalink: /:slug
+    permalink: /quote/:slug
   users:
     output: true
     permalink: /@:name
