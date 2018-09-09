@@ -33,17 +33,23 @@ body {
   font-size: 28px;
   position: relative;
   margin: auto;
-  text-align: left;
+  // text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.single-quote {
+  text-align: center;
+}
+
 .quote-content {
-  padding: 20px $page-gutter;
+  padding: 2em $page-gutter;
   font-size: 32px;
   line-height: 1.5em;
-  // max-width: 960px;
+  text-align: center;
+  max-width: 1024px;
+  margin: auto;
 }
 
 @import "responsive";

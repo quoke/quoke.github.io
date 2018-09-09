@@ -2,11 +2,8 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  <div class="quote">
-    {% include navigation.html %}
-    <!-- <div>
-        {{ page.text }}
-    </div> -->
+  {% include navigation.html %}
+  <div class="single-quote">
     <div class="quote-content">
       <div class="quote-{{ page.size }}">
         <div>&ldquo;{{ page.text }}&rdquo; {% if page.author %}
