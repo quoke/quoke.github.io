@@ -5,25 +5,3 @@
 //   overflow: hidden;
 // }
 
-// Box sizing reset
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.vertical-text {
-  writing-mode: vertical-rl;
-}
-
-.pixel-font {
-  font-family: "Press Start 2P", sans-serif;
-}

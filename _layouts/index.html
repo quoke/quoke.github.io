@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="home">
+
+<body>
   <header>
     {% include navigation.html %}
   </header>
   <section>
-    <ul class="quote-list">
+    <div class="container-fluid">
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
-      {% for quote in sortedQuotations %} 
-        {% if true or quote.tags contains 'featured' %}
-        <p>
-          <div class="quote-container">
-            <a href="{{ quote.url }}">{{quote.text}}</a>
-          </div>
-        </p>
-        {% endif %}
+      {% for quote in sortedQuotations %}
+      {% if true or quote.tags contains 'featured' %}
+      <h1 class="quote-link">
+        <a href="{{ quote.url }}">{{quote.text}}</a>
+      </h1>
+      {% endif %}
       {% endfor %}
-    </ul>
+    </div>
   </section>
-  {% include footer.html %} {% include foot.html %}
+  {% include footer.html %}
+  {% include foot.html %}
 </body>
+
 </html>

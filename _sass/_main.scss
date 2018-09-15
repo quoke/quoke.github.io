@@ -3,16 +3,11 @@ $color-border: #eee;
 $page-gutter: 15px;
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: normal;
-  color: black;
+  
 }
 
 .quote-list {
-  padding: 0 $page-gutter;
-  margin: 0;
+ 
 }
 
 .quote-list a {
@@ -24,18 +19,14 @@ body {
   color: black;
 }
 
-.quote-container {
-  font-size: 28px;
-  position: relative;
-  margin: auto;
-  // text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.quote-link {
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
 }
 
 @import "utils";
 @import "nav";
 @import "footer";
-@import "single-quote";
+@import "quotation";
 @import "responsive";
