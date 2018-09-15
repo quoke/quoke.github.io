@@ -2,11 +2,6 @@
 $color-border: #eee;
 $page-gutter: 15px;
 
-@import "utils";
-@import "nav";
-@import "footer";
-// @import "collapsible";
-
 body {
   margin: 0;
   font-family: sans-serif;
@@ -39,17 +34,8 @@ body {
   text-overflow: ellipsis;
 }
 
-.single-quote {
-  text-align: center;
-}
-
-.quote-content {
-  padding: 2em $page-gutter;
-  font-size: 32px;
-  line-height: 1.5em;
-  text-align: center;
-  max-width: 1024px;
-  margin: auto;
-}
-
+@import "utils";
+@import "nav";
+@import "footer";
+@import "single-quote";
 @import "responsive";
