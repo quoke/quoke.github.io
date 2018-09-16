@@ -3,10 +3,10 @@
 {% include head.html %}
 <body>
   {% include navigation.html %}
-  <div class="single-quote container-fluid">
+  <div class="single-quote container">
     <div class="quote-content">
       <div class="quote-{{ page.size }}">
-        <div class="display-2">&ldquo;{{ page.text }}&rdquo; {% if page.author %}
+        <div>&ldquo;{{ page.text }}&rdquo; {% if page.author %}
           <small>&mdash;{{ page.author }}</small>{% endif %}</div>
       </div>
     </div>

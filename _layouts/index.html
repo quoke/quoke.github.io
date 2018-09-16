@@ -7,13 +7,13 @@
     {% include navigation.html %}
   </header>
   <section>
-    <div class="container-fluid">
+    <div class="container">
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
       {% for quote in sortedQuotations %}
       {% if true or quote.tags contains 'featured' %}
-      <h1 class="quote-link">
+      <h2 class="quote-link">
         <a href="{{ quote.url }}">{{quote.text}}</a>
-      </h1>
+      </h2>
       {% endif %}
       {% endfor %}
     </div>
