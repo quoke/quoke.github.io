@@ -3,22 +3,20 @@
 {% include head.html %}
 
 <body>
-  <header>
-    {% include navigation.html %}
-  </header>
+
   <section>
-    <div class="container">
+    
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
       {% for quote in sortedQuotations %}
-      {% if true or quote.tags contains 'featured' %}
-      <h2 class="quote-link">
+      {% if quote.tags contains 'homepage' %}
+      {{ quote.content }}
+      <!-- <h2 class="quote-link">
         <a href="{{ quote.url }}">{{quote.text}}</a>
-      </h2>
+      </h2> -->
       {% endif %}
       {% endfor %}
-    </div>
+   
   </section>
-  {% include footer.html %}
   {% include foot.html %}
 </body>
 
