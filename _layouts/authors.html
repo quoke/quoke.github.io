@@ -5,7 +5,7 @@
   <body>
     <main container>
       <section>
-        {% assign sortedAuthors = site.authors | sort: 'date' | reverse %} {%
+        {% assign sortedAuthors = site.authors | sort: 'title' | reverse | reverse %} {%
         for author in sortedAuthors %}
 
         <!-- {{ quote.content }} -->
