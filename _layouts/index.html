@@ -9,10 +9,10 @@
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
       {% for quote in sortedQuotations %}
       {% if quote.tags contains 'homepage' %}
-      {{ quote.content }}
-      <!-- <h2 class="quote-link">
+      <!-- {{ quote.content }} -->
+      <h2 class="quote-link">
         <a href="{{ quote.url }}">{{quote.text}}</a>
-      </h2> -->
+      </h2>
       {% endif %}
       {% endfor %}
    

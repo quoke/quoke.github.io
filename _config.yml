@@ -50,3 +50,6 @@ collections:
   users:
     output: true
     permalink: /@:name
+  authors:
+    output: true
+    permalink: /author/:name

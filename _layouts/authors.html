@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <main container>
+      <section>
+        {% assign sortedAuthors = site.authors | sort: 'date' | reverse %} {%
+        for author in sortedAuthors %}
+
+        <!-- {{ quote.content }} -->
+        <h2 class="author-link">
+          <a href="{{ author.url }}">{{ author.title }}</a>
+        </h2>
+
+        {% endfor %}
+      </section>
+      {% include foot.html %}
+    </main>
+  </body>
+</html>
