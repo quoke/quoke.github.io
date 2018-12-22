@@ -2,20 +2,7 @@
 $color-border: #eee;
 $page-gutter: 15px;
 
-.quote-link a {
-  text-decoration: none;
-  color: black;
-}
 
-.quote-link a:visited {
-  color: black;
-}
-
-.quote-link {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 @import "utils";
 @import "nav";
