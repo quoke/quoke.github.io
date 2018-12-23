@@ -1,3 +1,3 @@
 # Quoke
 
-A website that showcases quotations.
+A website about quotations.
