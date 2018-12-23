@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+  <section>
+    
+      {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+      {% for quote in sortedQuotations %}
+      {% if quote.tags contains 'homepage' %}
+      <!-- {{ quote.content }} -->
+      <h2 class="quote-link">
+        <a href="{{ quote.url }}">{{quote.text}}</a>
+      </h2>
+      {% endif %}
+      {% endfor %}
+   
+  </section>
+  {% include foot.html %}
+</body>
+
+</html>

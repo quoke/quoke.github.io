@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-
   <body>
     Quoke.
     {% assign sortedAuthors = site.authors | sort:
@@ -10,7 +9,7 @@
       <a href="{{ author.url }}">{{ author.title }}</a>
     </span>
     {% endfor %}
-    / Add 
+    / <a href="https://github.com/quoke/quoke.github.io/tree/master/_authors">Add Author</a>
     {% include foot.html %}
   </body>
 </html>
