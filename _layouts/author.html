@@ -7,7 +7,6 @@
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
       {% for quote in sortedQuotations %}
       {% if quote.author contains page.title %}
-      <!-- {{ quote.content }} -->
       <h2 class="quote-link">
         <a href="{{ quote.url }}">{{quote.text}}</a>
       </h2>

@@ -2,12 +2,13 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  {% include navigation.html %}
   <div class="single-quote container">
     <div class="quote-content">
       <div class="quote-{{ page.size }}">
-        <div>&ldquo;{{ page.text }}&rdquo; {% if page.author %}
-          <small>&mdash;{{ page.author }}</small>{% endif %}</div>
+        <h2>{{ page.text }}
+          {% if page.author %} 
+            &mdash;{{ page.author }}
+          {% endif %}</h2>
       </div>
     </div>
   </div>

@@ -4,7 +4,8 @@
   <body>
     Quoke.
     {% assign sortedAuthors = site.authors | sort:
-    'title' | reverse | reverse %} {% for author in sortedAuthors %}
+    'title' | reverse | reverse %}
+    {% for author in sortedAuthors %}
     <span class="author-link">
       <a href="{{ author.url }}">{{ author.title }}</a>
     </span>
