@@ -2,13 +2,14 @@
 <html lang="en">
 {% include head.html %}
 <body>
+  <a href="/">Quoke</a>
   <div class="single-quote container">
     <div class="quote-content">
       <div class="quote-{{ page.size }}">
-        <h2>{{ page.text }}
+        <blockquote>{{ page.text }}
           {% if page.author %} 
-            &mdash;{{ page.author }}
-          {% endif %}</h2>
+            &mdash;<a href="/author/{{ page.author | slugify }}"">{{ page.author }}</a>
+          {% endif %}</blockquote>
       </div>
     </div>
   </div>
