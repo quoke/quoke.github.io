@@ -2,14 +2,14 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  <a href="/">Quoke</a> /
+  <a href="/">Quoke</a>.
     {{ page.title }}
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
     {% if quote.author contains page.title %}
-    <h2 class="quote-link">
+    <p class="quote-link">
       <a href="{{ quote.url }}">{{quote.text | truncatewords: 100 }}</a>
-    </h2>
+    </p>
     {% endif %}
     {% endfor %}
 {% include foot.html %}

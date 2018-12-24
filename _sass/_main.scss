@@ -2,7 +2,13 @@
 $color-border: #eee;
 $page-gutter: 15px;
 
+body {
+}
 
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 @import "utils";
 @import "nav";
