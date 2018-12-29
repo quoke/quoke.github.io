@@ -4,6 +4,8 @@
 // Some variables
 $color-border: #eee;
 $page-gutter: 15px;
+$quote-font-size: 22px;
+$quote-line-height: 1.6em;
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -12,16 +14,30 @@ body {
 
 a {
   text-decoration: none;
+  color: #121212;
+  border-bottom: 1px dotted #ddd;
 }
 
 main {
   max-width: 720px;
   padding: 0 $page-gutter;
+
+  // h1 {
+  //   font-family: 'Trocchi', serif;
+  // }
 }
 
 blockquote {
   margin-left: 0;
   margin-right: 0;
+  font-size: $quote-font-size;
+  line-height: $quote-line-height;
+}
+
+.author-link {
+  display: inline-block;
+  margin-right: 10px;
+  // margin-top: 5px;
 }
 
 @import "utils";
