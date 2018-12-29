@@ -2,14 +2,16 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    Quoke.
-    {% assign sortedAuthors = site.authors | sort:
-    'title' | reverse | reverse %}
-    {% for author in sortedAuthors %}
-    <span class="author-link">
-      <a href="{{ author.url }}">{{ author.title }}</a>
-    </span>
-    {% endfor %}
+    {% include nav.html %}
+    <main>
+      {% assign sortedAuthors = site.authors | sort:
+      'title' | reverse | reverse %}
+      {% for author in sortedAuthors %}
+      <span class="author-link">
+        <a href="{{ author.url }}">{{ author.title }}</a>
+      </span>
+      {% endfor %}
+    </main>
     <!-- / <a href="https://github.com/quoke/quoke.github.io/tree/master/_authors">Add Author</a> -->
     {% include foot.html %}
   </body>

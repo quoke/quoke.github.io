@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Trocchi');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+
 // Some variables
 $color-border: #eee;
 $page-gutter: 15px;
 
 body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 720px;
+  padding: 0 $page-gutter;
 }
 
 blockquote {
