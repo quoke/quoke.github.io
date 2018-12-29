@@ -4,6 +4,14 @@
 <body>
   {% include nav.html %}
   <main>
+    <h1>Quotations</h1>
+    {% assign sortedQuotations = site.quotations | sort:
+      'date' | reverse %}
+      {% for quotation in sortedQuotations %}
+      <span class="quotation-link">
+        <a href="{{ quotation.url }}">{{ quotation.title }}..</a>
+      </span>
+      {% endfor %}
     <h1>Authors</h1>
     {% assign sortedAuthors = site.authors | sort:
     'title' | reverse | reverse %}
@@ -13,7 +21,6 @@
     </span>
     {% endfor %}
   </main>
-  <!-- / <a href="https://github.com/quoke/quoke.github.io/tree/master/_authors">Add Author</a> -->
   {% include foot.html %}
 </body>
 </html>

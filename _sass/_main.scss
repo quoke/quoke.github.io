@@ -34,10 +34,10 @@ blockquote {
   line-height: $quote-line-height;
 }
 
+.quotation-link,
 .author-link {
   display: inline-block;
   margin-right: 10px;
-  // margin-top: 5px;
 }
 
 @import "utils";
