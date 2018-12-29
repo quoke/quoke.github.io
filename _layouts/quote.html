@@ -9,7 +9,7 @@
       <div class="quote-{{ page.size }}">
         <blockquote>
           &ldquo;{{ page.text }}&rdquo;
-          {% if page.author %} 
+          {% if page.author %}
             &mdash;<a href="/author/{{ page.author | slugify }}"">{{ page.author }}</a>
           {% endif %}
         </blockquote>

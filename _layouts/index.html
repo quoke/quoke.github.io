@@ -14,7 +14,7 @@
       {% endfor %}
     <h1>Authors</h1>
     {% assign sortedAuthors = site.authors | sort:
-    'title' | reverse | reverse %}
+    'date' | reverse %}
     {% for author in sortedAuthors %}
     <span class="author-link">
       <a href="{{ author.url }}">{{ author.title }}</a>
