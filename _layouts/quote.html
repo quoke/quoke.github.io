@@ -10,9 +10,9 @@
         <blockquote>
           &ldquo;{{ page.text }}&rdquo;
           {% if page.authorSlug %}
-            &mdash;<a href="/author/{{ page.authorSlug }}">{{ page.author }}</a>
+            <cite>&mdash;<a href="/author/{{ page.authorSlug }}">{{ page.author }}</a></cite>
           {% else %}
-            &mdash;<a href="/author/{{ page.author | slugify }}">{{ page.author }}</a>
+            <cite>&mdash;<a href="/author/{{ page.author | slugify }}">{{ page.author }}</a></cite>
           {% endif %}
         </blockquote>
       </div>

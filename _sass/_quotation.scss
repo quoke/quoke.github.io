@@ -1,7 +1,10 @@
-// .single-quote {
-//  font-size: 28px;
-// }
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: $quote-font-size;
+  line-height: $quote-line-height;
 
-// .quote-content {
-
-// }
+  cite {
+    white-space: nowrap;
+  }
+}

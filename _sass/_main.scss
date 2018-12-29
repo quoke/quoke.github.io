@@ -21,23 +21,13 @@ a {
 main {
   max-width: 780px;
   padding: 0 $page-gutter;
-
-  // h1 {
-  //   font-family: 'Trocchi', serif;
-  // }
-}
-
-blockquote {
-  margin-left: 0;
-  margin-right: 0;
-  font-size: $quote-font-size;
-  line-height: $quote-line-height;
 }
 
 .quotation-link,
 .author-link {
-  display: inline-block;
+  display: inline;
   margin-right: 10px;
+  word-break: break-word;
 }
 
 @import "utils";
