@@ -7,5 +7,6 @@ author: John Green
 source: Looking for Alaska
 topics:
   - love
+  - courage
 ---
 
