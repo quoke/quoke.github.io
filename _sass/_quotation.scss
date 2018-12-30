@@ -4,6 +4,10 @@ blockquote {
   font-size: $quote-font-size;
   line-height: $quote-line-height;
 
+  cite.author {
+    font-style: normal;
+  }
+
   cite {
     white-space: nowrap;
   }
