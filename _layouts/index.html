@@ -7,7 +7,7 @@
     <h1>Authors</h1>
     {% assign sortedAuthors = site.authors | sort:
     'date' | reverse %}
-    {% for author in sortedAuthors %}
+    {% for author in sortedAuthors limit:20 %}
     <span class="author-link">
       <a href="{{ author.url }}">{{ author.title }}</a>
     </span>
@@ -15,7 +15,7 @@
     <h1>Quotations</h1>
     {% assign sortedQuotations = site.quotations | sort:
     'date' | reverse %}
-    {% for quotation in sortedQuotations %}
+    {% for quotation in sortedQuotations limit:20 %}
     <span class="quotation-link">
       <a href="{{ quotation.url }}">{{ quotation.title }}</a>
     </span>
