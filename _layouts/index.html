@@ -4,7 +4,7 @@
 <body>
   {% include nav.html %}
   <main>
-    <h1>Author</h1>
+    <h1>Authors</h1>
     {% assign sortedAuthors = site.authors | sort:
     'date' | reverse %}
     {% for author in sortedAuthors %}
@@ -12,7 +12,7 @@
       <a href="{{ author.url }}">{{ author.title }}</a>
     </span>
     {% endfor %}
-    <h1>Quotation</h1>
+    <h1>Quotations</h1>
     {% assign sortedQuotations = site.quotations | sort:
     'date' | reverse %}
     {% for quotation in sortedQuotations %}
