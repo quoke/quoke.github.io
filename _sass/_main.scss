@@ -11,6 +11,7 @@ $quote-line-height: 1.6em;
 body {
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 a {
@@ -38,6 +39,7 @@ p {
 
 hr {
   border: 0;
+  // border-top: 5px solid white;
   height: 1px;
   background: #111;
   // background-image: linear-gradient(to right, #fff, #ddd, #fff);
