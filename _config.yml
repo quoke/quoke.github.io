@@ -53,3 +53,6 @@ collections:
   authors:
     output: true
     permalink: /author/:name
+  sources:
+    output: true
+    permalink: /source/:name

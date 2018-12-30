@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include nav.html %}
+<main>
+  <h1>{{ page.title }}</h1>
+  {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+  {% for quote in sortedQuotations %}
+  {% if quote.source contains page.title %}
+  <p class="quote-link">
+    <a href="{{ quote.url }}">{{quote.text | truncatewords: 100 }}</a>
+  </p>
+  {% endif %}
+  {% endfor %}
+</main>
+{% include foot.html %}
+</body>
+</html>

@@ -6,17 +6,15 @@
   <main>
   <div class="single-quote container">
     <div class="quote-content">
-      <div class="quote-{{ page.size }}">
-        <blockquote>
-          &ldquo;{{ page.text }}&rdquo;
-          {% if page.author %}
-            <cite class="author">&mdash;<a href="/author/{{ page.author | slugify }}">{{ page.author }}</a></cite>
-          {% endif %}
-          {% if page.source %}
-          <cite>, <a href="/source/{{ page.source | slugify }}">{{ page.source }}</a></cite>
-          {% endif %}
-        </blockquote>
-      </div>
+      <blockquote>
+        &ldquo;{{ page.text }}&rdquo;
+        {% if page.author %}
+          <cite class="author">&mdash;<a href="/author/{{ page.author | slugify }}">{{ page.author }}</a></cite>
+        {% endif %}
+        {% if page.source %}
+        <cite>, <a href="/source/{{ page.source | slugify }}">{{ page.source }}</a></cite>
+        {% endif %}
+      </blockquote>
     </div>
   </div>
   <hr>
