@@ -15,6 +15,9 @@
     </div>
   </div>
   <hr>
+  {% if page.topics %}
+  <span class="quotation-tags">
+    Topics: {% for topic in page.topics %} <a href="/topic/{{ topic | slugify }}">{{ topic }}</a> {% endfor %} {% endif %}</span>
   <span class="quotation-date">Date added: {{ page.date | date_to_string }}</span>
   </main>
   {% include foot.html %}
