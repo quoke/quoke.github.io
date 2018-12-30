@@ -11,9 +11,10 @@ blockquote {
 
   cite.author {
     font-style: normal;
+    white-space: nowrap;
   }
 
   cite {
-    white-space: nowrap;
+    font-size: 0.9em;
   }
 }

@@ -4,6 +4,7 @@
 <body>
   {% include nav.html %}
   <main>
+    {{ site.tags.life }}
     <h1>Quotations</h1>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quotation in sortedQuotations limit:20 %}
