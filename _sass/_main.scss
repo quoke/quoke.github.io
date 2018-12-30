@@ -28,6 +28,11 @@ main {
   display: inline;
   margin-right: 10px;
   word-break: break-word;
+  line-height: 1.5em;
+}
+
+p.quote-link {
+  line-height: 1.5em;
 }
 
 @import "utils";
