@@ -3,7 +3,7 @@ Quoke
 
 Quoke is a crowdsourced, open source collection of quotations built by the community. The files in this repository are compiled and served on [GitHub Pages](https://pages.github.com/). See the live site at [quoke.co](https://quoke.co).
 
-You can help by adding your favourite quote, author, source, or topic.
+We are still in early days of development. You can help by adding your favourite quote, author, source, or topic. Or if you're a developer or designer you can help by adding features or working on the layouts or cleaning up the code.
 
 How to add a quote?
 -------------------
