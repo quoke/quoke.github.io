@@ -8,17 +8,33 @@ We are still in early days of development. You can help by adding your favourite
 How to add a quote?
 -------------------
 
-Simply add a file in the `/_quotations` directory with the following.
+Simply add a .md (markdown) file in the `/_quotations` directory. The filename should be the first few words of the quotation, all in lowercase and separated by dashes.
+
+And the content of the file should look something like this.
 
 ```markdown
 ---
 layout: quotation
-title: First few words of quotation
-date: 2018-12-31
-text: The text body of the quote.
-author: The author
-topics:
-  - love
-  - life
+title: Always forgive your enemies
+date: 2018-02-26
+text: Always forgive your enemies; nothing annoys them so much.
+author: Oscar Wilde
+topics: 
+  - forgiveness
+---
+```
+
+__Note: in future we may organise this folder into alphabetical subfolders for neatness.__
+
+How to add an author?
+---------------------
+
+Add a .md file to the `/_authors` directory. The filename should be the author's name, all in lowercase and separated by dashes.
+
+```markdown
+---
+layout: author
+title: Albert Einstein
+date: 2018-12-29
 ---
 ```
