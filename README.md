@@ -6,7 +6,7 @@ Quoke is an open source collection of quotations built by the community. You can
 How to add a quote?
 -------------------
 
-Simply add a file in the `/quotations` directory with the following.
+Simply add a file in the `/_quotations` directory with the following.
 
 ```markdown
 ---
