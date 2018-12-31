@@ -8,7 +8,7 @@ We are still in early days of development. You can help by adding your favourite
 How to add a quote?
 -------------------
 
-Simply add a .md (markdown) file in the `/_quotations` directory. The filename should be the first few words of the quotation, all in lowercase and separated by dashes.
+Simply add a .md (markdown) file in the `/_quotations` directory. The filename should be the first few words of the quotation, all in lowercase and separated by dashes eg. `always-forgive-your-enemies.md`.
 
 And the content of the file should look something like this.
 
@@ -24,12 +24,14 @@ topics:
 ---
 ```
 
-__Note: in future we may organise this folder into alphabetical subfolders for neatness.__
+_Note: in future we may organise this folder into alphabetical subfolders for neatness._
 
 How to add an author?
 ---------------------
 
-Add a .md file to the `/_authors` directory. The filename should be the author's name, all in lowercase and separated by dashes.
+Add a .md file to the `/_authors` directory. The filename should be the author's name, all in lowercase and separated by dashes eg. `albert-einstein.md`.
+
+The file should have something similar to this up top in the [front matter](https://jekyllrb.com/docs/front-matter/).
 
 ```markdown
 ---
