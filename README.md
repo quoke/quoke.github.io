@@ -1,7 +1,9 @@
 Quoke
 =====
 
-Quoke is an open source collection of quotations built by the community. You can help by adding your favourite quote, author, source, or topic.
+Quoke is an open source collection of quotations built by the community. The files in this repository are compiled and served on GitHub Pages. See the live site at [quoke.co](https://quoke.co).
+
+You can help by adding your favourite quote, author, source, or topic.
 
 How to add a quote?
 -------------------
