@@ -24,8 +24,16 @@
     <h1>Sources</h1>
     {% assign sortedSources = site.sources | sort: 'date' | reverse %}
     {% for source in sortedSources limit:20 %}
-    <span class="author-link">
+    <span class="source-link">
       <a href="{{ source.url }}">{{ source.title }}</a>
+    </span>
+    {% endfor %}
+
+    <h1>Topics</h1>
+    {% assign sortedTopics = site.topics | sort: 'date' | reverse %}
+    {% for topic in sortedTopics limit:20 %}
+    <span class="topic-link">
+      <a href="{{ topic.url }}">{{ topic.title }}</a>
     </span>
     {% endfor %}
   </main>

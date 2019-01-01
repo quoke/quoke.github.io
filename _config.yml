@@ -56,3 +56,6 @@ collections:
   sources:
     output: true
     permalink: /source/:name
+  topics:
+    output: true
+    permalink: /topic/:name
