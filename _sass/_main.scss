@@ -26,7 +26,9 @@ main {
 }
 
 .quotation-link,
-.author-link {
+.author-link,
+.source-link,
+.topic-link {
   display: inline;
   margin-right: 10px;
   word-break: break-word;
