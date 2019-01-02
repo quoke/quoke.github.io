@@ -8,8 +8,28 @@
     <div class="quote-content">
       <blockquote>
         &ldquo;{{ page.text }}&rdquo;
+        <!-- Check if author exists in collection -->
+        {% assign linkAuthor = false %}
+        {% for siteAuthor in site.authors %}
+          {% assign authorTitleSlug = siteAuthor.title | slugify %}
+          {% assign pageAuthorSlug = page.author | slugify %}
+          {% if authorTitleSlug == pageAuthorSlug %}
+            {% assign linkAuthor = true %}
+          {% endif %}
+        {% endfor %}
+
+        <!-- Check if source exists in collection -->
+        {% assign linkSource = false %}
+        {% for siteSource in site.sources %}
+          {% assign sourceTitleSlug = siteSource.title | slugify %}
+          {% assign pageSourceSlug = page.source | slugify %}
+          {% if sourceTitleSlug == pageSourceSlug %}
+            {% assign linkSource = true %}
+          {% endif %}
+        {% endfor %}
+
         {% if page.author %}
-          <cite class="author">&mdash;<a href="/author/{{ page.author | slugify }}">{{ page.author }}</a></cite>{% endif %}{% if page.source %}<cite>, <a href="/source/{{ page.source | slugify }}">{{ page.source }}</a></cite>
+            <cite class="author">&mdash;{% if linkAuthor %}<a href="/author/{{ page.author | slugify }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}</cite>{% endif %}{% if page.source %}<cite>, {% if linkSource %}<a href="/source/{{ page.source | slugify }}">{{ page.source }}</a>{% else %}{{ page.source }}{% endif %}</cite>
         {% endif %}
       </blockquote>
     </div>
@@ -21,6 +41,7 @@
     {% for topic in page.topics %}
       {% assign linkTopic = false %}
 
+      <!-- Check if topic exists in topics collection -->
       {% for siteTopic in site.topics %}
         {% assign topicTitleSlug = siteTopic.title | slugify %}
         {% assign pageTopicSlug = topic | slugify %}
@@ -30,7 +51,7 @@
       {% endfor %}
 
 
-      {% if linkTopic == true %}
+      {% if linkTopic %}
         <a href="/topic/{{ topic | slugify }}">{{ topic }}</a>
       {% else %}
         {{ topic }}
