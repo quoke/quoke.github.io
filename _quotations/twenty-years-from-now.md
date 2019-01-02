@@ -6,6 +6,6 @@ text: Twenty years from now you will be more disappointed by the things that you
 author: H. Jackson Brown Jr.
 source: P.S. I Love You
 topics:
-  - life
-  - discovery
+  - Life
+  - Discovery
 ---

@@ -8,11 +8,14 @@
   {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
   {% assign pageTitleSlug = page.title | slugify %}
   {% for quote in sortedQuotations %}
-  {% if quote.topics contains pageTitleSlug %}
-  <p class="quote-link">
-    <a href="{{ quote.url }}">{{ quote.text | truncatewords: 100 }}</a>
-  </p>
-  {% endif %}
+    {% for topic in quote.topics %}
+      {% assign topicSlug = topic | slugify %}
+      {% if topicSlug contains pageTitleSlug %}
+        <p class="quote-link">
+          <a href="{{ quote.url }}">{{ quote.text | truncatewords: 100 }}</a>
+        </p>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 </main>
 {% include foot.html %}

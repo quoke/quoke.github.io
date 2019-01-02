@@ -6,6 +6,6 @@ text: No, it is impossible; it is impossible to convey the life—sensation of a
 author: Joseph Conrad
 source: Heart of Darkness
 topics:
-  - dreams
-  - life
+  - Dreams
+  - Life
 ---

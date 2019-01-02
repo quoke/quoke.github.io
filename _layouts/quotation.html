@@ -17,7 +17,26 @@
   <hr>
   {% if page.topics %}
   <span class="quotation-tags">
-    Topics: {% for topic in page.topics %} <a href="/topic/{{ topic | slugify }}">{{ topic }}</a> {% endfor %} {% endif %}</span>
+    Topics:
+    {% for topic in page.topics %}
+      {% assign linkTopic = false %}
+
+      {% for siteTopic in site.topics %}
+        {% assign topicTitleSlug = siteTopic.title | slugify %}
+        {% assign pageTopicSlug = topic | slugify %}
+        {% if topicTitleSlug == pageTopicSlug %}
+          {% assign linkTopic = true %}
+        {% endif %}
+      {% endfor %}
+
+
+      {% if linkTopic == true %}
+        <a href="/topic/{{ topic | slugify }}">{{ topic }}</a>
+      {% else %}
+        {{ topic }}
+      {% endif %}
+    {% endfor %}
+  {% endif %}</span>
   <span class="quotation-date">Date added: {{ page.date | date_to_string }}</span>
   </main>
   {% include foot.html %}

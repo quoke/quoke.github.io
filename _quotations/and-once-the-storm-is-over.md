@@ -6,5 +6,5 @@ text: And once the storm is over, you won't remember how you made it through, ho
 author: Haruki Murakami
 source: Kafka on the Shore
 topics:
-  - perseverance
+  - Perseverance
 ---

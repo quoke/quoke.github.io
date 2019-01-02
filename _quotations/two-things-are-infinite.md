@@ -5,6 +5,6 @@ date: 2018-12-23
 text: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
 author: Albert Einstein
 topics:
-  - infinity
-  - stupidity
+  - Infinity
+  - Stupidity
 ---

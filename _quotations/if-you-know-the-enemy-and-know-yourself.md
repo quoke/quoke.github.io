@@ -6,6 +6,6 @@ text: If you know the enemy and know yourself, you need not fear the result of a
 author: Sun Tzu
 source: The Art of War
 topics:
-  - defeat
-  - enemies
+  - Defeat
+  - Enemies
 ---

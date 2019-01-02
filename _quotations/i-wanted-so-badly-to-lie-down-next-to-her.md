@@ -6,7 +6,7 @@ text: I wanted so badly to lie down next to her on the couch, to wrap my arms ar
 author: John Green
 source: Looking for Alaska
 topics:
-  - love
-  - courage
+  - Love
+  - Courage
 ---
 
