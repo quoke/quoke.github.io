@@ -5,7 +5,12 @@ Quoke is a crowdsourced, open source collection of quotations built by the commu
 
 We are still in early days of development. You can help by adding your favourite quote, author, source, or topic. Or if you're a developer or designer you can help by adding features or working on the layouts or cleaning up the code.
 
-How to add a quote?
+How do I develop locally?
+-------------------------
+
+You'll need to have Jekyll installed. Follow the instruction [in the docs](https://jekyllrb.com/docs/) to get Ruby and Jekyll up and running on your computer. Afterwards simply clone this repo and then run `bundle exec jekyll serve` to serve a local copy. Changes you make to the code will then automatically be rebuilt and served.
+
+How do I add a quote?
 -------------------
 
 Simply add a .md (markdown) file in the `/_quotations` directory. The filename should be the first few words of the quotation, all in lowercase and separated by dashes eg. `always-forgive-your-enemies.md`.
@@ -26,7 +31,7 @@ topics:
 
 _Note: in future we may organise this folder into alphabetical subfolders for neatness._
 
-How to add an author?
+How do I add an author?
 ---------------------
 
 Add a .md file to the `/_authors` directory. The filename should be the author's name, all in lowercase and separated by dashes eg. `albert-einstein.md`.
@@ -43,7 +48,7 @@ date: 2018-12-29
 
 _Use the same method to add Sources and Topics too._
 
-Credits
--------
+Notes
+-----
 
-* Created by [@phocks](https://github.com/phocks)
+Quoke was originally developed by [@phocks](https://github.com/phocks).
