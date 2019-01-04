@@ -1,6 +1,6 @@
 ---
 name: phocks
-layout: default
+layout: page
 ---
 
 Hello I am Josh.
