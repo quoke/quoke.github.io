@@ -46,4 +46,4 @@ _Use the same method to add Sources and Topics too._
 Credits
 -------
 
-* Created by Joshua Byrd <phocks@gmail.com>
+* Created by [@phocks](https://github.com/phocks)
