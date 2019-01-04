@@ -5,6 +5,8 @@ Quoke is a crowdsourced, open source collection of quotations built by the commu
 
 We are still in early days of development. You can help by adding your favourite quote, author, source, or topic. Or if you're a developer or designer you can help by adding features or working on the layouts or cleaning up the code.
 
+Pull requests are very welcome.
+
 How do I develop locally?
 -------------------------
 
