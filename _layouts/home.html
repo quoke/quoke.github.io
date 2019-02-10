@@ -3,8 +3,7 @@
 {% include head.html %}
 <body>
   {% include nav.html %}
-  <main>
-    {{ site.tags.life }}
+ <main>
     <h1>Quotations</h1>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quotation in sortedQuotations limit:20 %}
@@ -35,7 +34,7 @@
     <span class="topic-link">
       <a href="{{ topic.url }}">{{ topic.title }}</a>
     </span>
-    {% endfor %}
+    {% endfor %} 
   </main>
   {% include foot.html %}
 </body>

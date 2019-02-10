@@ -1,5 +1,4 @@
 nav {
-  font-family: 'IBM Plex Sans', sans-serif;
   background-color: black;
   padding: 0px $page-gutter;
   color: white;
@@ -11,7 +10,7 @@ nav {
   }
 
   h2 {
-    font-family: 'Trocchi', serif;
+    font-family: "Press Start 2P", cursive;
     display: inline-block;
     margin-right: 10px;
     margin-top: 10px;
@@ -21,10 +20,10 @@ nav {
   span {
     font-size: 14px;
     position: relative;
-    top: -1px;  
+    top: -1px;
   }
 
   span a {
-    text-decoration: underline; 
+    text-decoration: underline;
   }
 }
