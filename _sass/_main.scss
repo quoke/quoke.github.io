@@ -1,28 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Trocchi");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 // Some variables
 $color-light-grey: #ababab;
-$color-medium-grey: #777;
+$color-medium-grey: #676767;
+$color-dark-grey: #434343;
 $page-gutter: 15px;
 $quote-font-size: 22px;
 $quote-line-height: 1.6em;
 
 body {
+  background-color: black;
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
-  margin-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #121212;
-  border-bottom: 1px dotted #ddd;
 }
 
 main {
-  max-width: 780px;
+  color: white;
+  max-width: 960px;
   padding: 0 $page-gutter;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    color: white;
+  }
 }
 
 .quotation-link,
