@@ -3,15 +3,15 @@
 {% include head.html %}
 <body>
   {% include nav.html %}
-  <main>
+  <!-- <main>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quotation in sortedQuotations limit:200 %}
     <span class="quotation-link-box">
       <a href="{{ quotation.url }}">{{ quotation.title }}</a>
     </span>
     {% endfor %}
-  </main>
- <!-- <main>
+  </main> -->
+ <main>
     <h1>Quotations</h1>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quotation in sortedQuotations limit:20 %}
@@ -43,7 +43,7 @@
       <a href="{{ topic.url }}">{{ topic.title }}</a>
     </span>
     {% endfor %} 
-  </main> -->
+  </main>
   {% include foot.html %}
 </body>
 </html>

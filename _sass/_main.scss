@@ -24,6 +24,7 @@ main {
   padding: 0 $page-gutter;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 32px;
 
   a {
     color: white;
@@ -36,25 +37,10 @@ main {
 .author-link,
 .source-link,
 .topic-link {
-  display: inline;
+  display: block;
   margin-right: 10px;
   word-break: break-word;
   line-height: 1.5em;
-}
-
-.quotation-link-box {
-  display: inline;
-  word-break: break-word;
-  font-size: 22px;
-  margin-right: 22px;
-  line-height: 2em;
-
-  a {
-    // text-decoration: none;
-    padding: 3px 10px 4px 0px;
-    // background-color: #222;
-    // border-radius: 3px;
-  }
 }
 
 p {
