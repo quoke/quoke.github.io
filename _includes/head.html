@@ -7,7 +7,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@phocks">
   <meta name="twitter:creator" content="@phocks">
-  <meta name="twitter:title" content="{{ site.title }} - a collection of quotations">
+  <meta name="twitter:title" content="{{ site.title }}{% if page.author %} - {{ page.author }}{% endif %}">
   <meta name="twitter:description" content="{{ page.text }}">
   <meta name="twitter:image" content="https://og-image.now.sh/{{ page.text | truncate: 150 | uri_escape | replace: '?', '%3F' }}.png?theme=light&md=1&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-black-triangle.svg">
 </head>
