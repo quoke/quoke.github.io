@@ -2,7 +2,22 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  {% include nav.html %}
+    {% include nav.html %}
+  <header>
+    <h1 class="text-hero">Quoke</h1>
+  </header>
+
+  <hr class="vr" />
+
+  <main>
+      {% assign sortedTopics = site.topics | sort: 'date' | reverse %}
+      {% for topic in sortedTopics limit:20 %}
+      <span class="topic-link">
+        <a href="{{ topic.url }}">{{ topic.title }}</a>
+      </span>
+      {% endfor %} 
+  </main>
+  
   <!-- <main>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quotation in sortedQuotations limit:200 %}
@@ -11,7 +26,7 @@
     </span>
     {% endfor %}
   </main> -->
- <main>
+ <!-- <main>
     <h1>Quotations</h1>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quotation in sortedQuotations limit:20 %}
@@ -43,7 +58,7 @@
       <a href="{{ topic.url }}">{{ topic.title }}</a>
     </span>
     {% endfor %} 
-  </main>
+  </main> -->
   {% include foot.html %}
 </body>
 </html>

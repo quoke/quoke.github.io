@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 // Some variables
@@ -11,8 +10,7 @@ $quote-font-size-mobile: 24px;
 $quote-line-height: 1.6em;
 
 body {
-  background-color: black;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
 }
 
@@ -20,17 +18,22 @@ main {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
   padding: 0 $page-gutter;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 32px;
 
   a {
-    color: white;
     text-decoration-color: #434343;
     text-decoration-style: dotted;
   }
+}
+
+hr.vr {
+  width: 1px;
+  height: 100px;
+  background: black;
+  border: none;
 }
 
 .quotation-link,
@@ -47,16 +50,10 @@ p {
   line-height: 1.5em;
 }
 
-hr {
-  border: 0;
-  // border-top: 5px solid white;
-  height: 1px;
-  background: #111;
-  // background-image: linear-gradient(to right, #fff, #ddd, #fff);
-}
-
 @import "utils";
 @import "nav";
 @import "footer";
 @import "quotation";
+@import "home";
 @import "responsive";
+
