@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 
 // Some variables
 $color-light-grey: #ababab;
@@ -10,9 +10,19 @@ $quote-font-size-mobile: 1.7em;
 $quote-line-height: 1.6em;
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
+  font-size: 18px;
 }
+
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Press Start 2P", cursive;
+  }
 
 main {
   padding: 0 $page-gutter;
@@ -26,11 +36,7 @@ main {
     text-decoration-style: dotted;
   }
 
-  h1 {
-    font-size: 2em;
-  }
-
-  section {
+  div.container {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -64,4 +70,3 @@ p {
 @import "quotation";
 @import "home";
 @import "responsive";
-

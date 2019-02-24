@@ -4,7 +4,7 @@
 <body>
   {% include nav.html %}
 <main>
-  <section>
+  <div class="container">
     <h1>{{ page.title }}</h1>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
@@ -14,7 +14,7 @@
     </p>
     {% endif %}
     {% endfor %}
-  </section>
+  </div>
 </main>
 {% include foot.html %}
 </body>

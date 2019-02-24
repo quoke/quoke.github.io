@@ -5,10 +5,11 @@
   {% include nav.html %}
   <main class="quotation">
     <section>
+      <h1 class="mark">“</h1>
       <div class="single-quote container">
         <div class="quote-content">
           <blockquote>
-            &ldquo;{{ page.text }}&rdquo;
+            {{ page.text }}
             <!-- Check if author exists in collection -->
             {% assign linkAuthor = false %}
             {% for siteAuthor in site.authors %}
