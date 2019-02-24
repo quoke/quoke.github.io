@@ -6,6 +6,7 @@
   <main class="quotation">
     <div class="quotation">
       <h1 class="mark">“</h1>
+
       <div class="single-quote container">
         <div class="quote-content">
           <blockquote>
@@ -36,31 +37,38 @@
           </blockquote>
         </div>
       </div>
-      {% if page.topics %}
-      <span class="quotation-tags">
-        Topics:
-        {% for topic in page.topics %}
-          {% assign linkTopic = false %}
 
-          <!-- Check if topic exists in topics collection -->
-          {% for siteTopic in site.topics %}
-            {% assign topicTitleSlug = siteTopic.title | slugify %}
-            {% assign pageTopicSlug = topic | slugify %}
-            {% if topicTitleSlug == pageTopicSlug %}
-              {% assign linkTopic = true %}
+      <p>
+      {% if page.topics %}
+        <span class="quotation-tags">
+          Topics:
+          {% for topic in page.topics %}
+            {% assign linkTopic = false %}
+
+            <!-- Check if topic exists in topics collection -->
+            {% for siteTopic in site.topics %}
+              {% assign topicTitleSlug = siteTopic.title | slugify %}
+              {% assign pageTopicSlug = topic | slugify %}
+              {% if topicTitleSlug == pageTopicSlug %}
+                {% assign linkTopic = true %}
+              {% endif %}
+            {% endfor %}
+
+
+            {% if linkTopic %}
+              <span><a href="/topic/{{ topic | slugify }}">{{ topic }}</a></span>
+            {% else %}
+              <span>{{ topic }}</span>
             {% endif %}
           {% endfor %}
+        {% endif %}</span>
+        <span class="quotation-date">Date added: {{ page.date | date_to_string }}</span>
+      </p>
 
-
-          {% if linkTopic %}
-            <a href="/topic/{{ topic | slugify }}">{{ topic }}</a>
-          {% else %}
-            {{ topic }}
-          {% endif %}
-        {% endfor %}
-      {% endif %}</span>
-      <span class="quotation-date">Date added: {{ page.date | date_to_string }}</span>
-      </div>
+      <p>
+          <a href="https://github.com/quoke/quoke.github.io/blob/master/{{page.relative_path}}">Edit this quote</a>
+      </p>
+    </div>
   </main>
   {% include foot.html %}
 </body>

@@ -17,13 +17,13 @@ body {
 }
 
 h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Press Start 2P", cursive;
-  }
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Press Start 2P", cursive;
+}
 
 main {
   padding: 0 $page-gutter;
@@ -46,7 +46,7 @@ main {
 
 hr.vr {
   width: 1px;
-  height: 100px;
+  height: 3em;
   background: black;
   border: none;
   margin-bottom: 1.5em;
