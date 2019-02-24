@@ -4,7 +4,7 @@
 <body>
   {% include nav.html %}
   <main class="quotation">
-    <section>
+    <div class="quotation">
       <h1 class="mark">“</h1>
       <div class="single-quote container">
         <div class="quote-content">
@@ -60,7 +60,7 @@
         {% endfor %}
       {% endif %}</span>
       <span class="quotation-date">Date added: {{ page.date | date_to_string }}</span>
-    </section>
+      </div>
   </main>
   {% include foot.html %}
 </body>
