@@ -9,14 +9,17 @@
 
   <hr class="vr" />
 
-  <main>
+  <main class="home">
+    <section>
       {% assign sortedTopics = site.topics | sort: 'date' | reverse %}
       {% for topic in sortedTopics limit:20 %}
       <span class="topic-link">
         <a href="{{ topic.url }}">{{ topic.title }}</a>
       </span>
-      {% endfor %} 
+      {% endfor %}
+    </section>
   </main>
+
   
   <!-- <main>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
