@@ -38,7 +38,7 @@ main {
     border-bottom: 1px dotted #ccc;
   }
 
-  div.container {
+  .container {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -58,10 +58,14 @@ hr.vr {
 .author-link,
 .source-link,
 .topic-link {
+  display: inline-block;
   font-size: 2em;
   margin-right: 10px;
-  word-break: break-word;
   line-height: 1.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .list-quote {
