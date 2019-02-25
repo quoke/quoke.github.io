@@ -6,7 +6,7 @@ text: At the midpoint on the journey of life, I found myself in a dark forest, f
 author: Dante Alighieri
 source: Inferno
 topics:
+  - Life
   - Journeys
-  - Darkness
 user: phocks
 ---
