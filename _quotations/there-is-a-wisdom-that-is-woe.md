@@ -8,6 +8,5 @@ source: Moby-Dick
 topics:
   - Sadness
   - Wisdom
-  - Bipolar
 user: phocks
 ---

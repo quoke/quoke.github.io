@@ -6,7 +6,6 @@ text: "Man, do not exalt yourself above the animals: they are sinless, and you, 
 author: Fyodor Dostoyevsky
 topics:
   - Animals
-  - Grandeur
   - Sin
 user: phocks
 ---

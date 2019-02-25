@@ -6,5 +6,6 @@ text: There is nothing noble in being superior to your fellow man; true nobility
 author: Ernest Hemingway
 topics:
   - Superiority
+  - Humanity
 user: phocks
 ---

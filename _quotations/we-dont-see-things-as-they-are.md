@@ -6,7 +6,6 @@ text: We don't see things as they are, we see them as we are.
 author: Anaïs Nin
 topics:
   - Perception
-  - Sight
   - Identity
 user: phocks
 ---

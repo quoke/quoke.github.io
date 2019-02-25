@@ -6,8 +6,7 @@ date: 2019-01-09
 title: Perhaps in the back of our minds
 layout: quotation
 topics:
-  - Veganism
-  - Vegetarianism
+  - Meat
   - Animal Rights
 user: phocks
 ---

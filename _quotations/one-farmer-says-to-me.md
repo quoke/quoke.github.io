@@ -7,7 +7,6 @@ layout: quotation
 title: One farmer says to me
 topics:
   - Animal Rights
-  - Animals
   - Farming
 user: phocks
 ---
