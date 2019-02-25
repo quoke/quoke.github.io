@@ -7,4 +7,5 @@ layout: quotation
 topics:
   - Humanity
   - Understanding
+user: phocks
 ---

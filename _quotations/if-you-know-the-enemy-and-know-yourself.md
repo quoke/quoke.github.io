@@ -8,4 +8,5 @@ source: The Art of War
 topics:
   - Defeat
   - Enemies
+user: phocks
 ---

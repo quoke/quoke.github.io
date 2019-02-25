@@ -7,6 +7,7 @@ author: Ralph Waldo Emerson
 topics:
   - Quotation
   - Books
+user: phocks
 ---
 <style>
   div.every-book-is-a-quotation {
