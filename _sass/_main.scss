@@ -33,8 +33,9 @@ main {
   text-align: center;
 
   a {
-    text-decoration-color: #888;
-    text-decoration-style: dotted;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
   }
 
   div.container {
@@ -50,6 +51,7 @@ hr.vr {
   background: black;
   border: none;
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .quotation-link,

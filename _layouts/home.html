@@ -18,27 +18,9 @@
       </span>
       {% endfor %}
     </section>
-  </main>
 
-  
-  <!-- <main>
-    {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
-    {% for quotation in sortedQuotations limit:200 %}
-    <span class="quotation-link-box">
-      <a href="{{ quotation.url }}">{{ quotation.title }}</a>
-    </span>
-    {% endfor %}
-  </main> -->
- <!-- <main>
-    <h1>Quotations</h1>
-    {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
-    {% for quotation in sortedQuotations limit:20 %}
-    <span class="quotation-link">
-      <a href="{{ quotation.url }}">{{ quotation.title }}</a>
-    </span>
-    {% endfor %}
+    <hr class="vr" />
 
-    <h1>Authors</h1>
     {% assign sortedAuthors = site.authors | sort: 'date' | reverse %}
     {% for author in sortedAuthors limit:20 %}
     <span class="author-link">
@@ -46,7 +28,8 @@
     </span>
     {% endfor %}
 
-    <h1>Sources</h1>
+    <hr class="vr" />
+  
     {% assign sortedSources = site.sources | sort: 'date' | reverse %}
     {% for source in sortedSources limit:20 %}
     <span class="source-link">
@@ -54,14 +37,16 @@
     </span>
     {% endfor %}
 
-    <h1>Topics</h1>
-    {% assign sortedTopics = site.topics | sort: 'date' | reverse %}
-    {% for topic in sortedTopics limit:20 %}
-    <span class="topic-link">
-      <a href="{{ topic.url }}">{{ topic.title }}</a>
+    <hr class="vr" />
+
+    {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+    {% for quotation in sortedQuotations limit:20 %}
+    <span class="quotation-link">
+      <a href="{{ quotation.url }}">{{ quotation.title }}</a>
     </span>
-    {% endfor %} 
-  </main> -->
+    {% endfor %}
+  </main>
+
   {% include foot.html %}
 </body>
 </html>
