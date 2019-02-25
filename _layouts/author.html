@@ -9,7 +9,7 @@
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
     {% for quote in sortedQuotations %}
     {% if quote.author contains page.title %}
-    <p class="quote-link">
+    <p class="list-quote">
       <a href="{{ quote.url }}">{{quote.text | truncatewords: 42 }}</a>
     </p>
     {% endif %}
