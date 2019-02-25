@@ -40,6 +40,8 @@
 
       <p>
       {% if page.topics %}
+        <span class="quotation-date">{{ page.date | date_to_string }}</span>
+        &middot;
         <span class="quotation-tags">
           {% for topic in page.topics %}
             {% assign linkTopic = false %}
@@ -62,8 +64,6 @@
           {% endfor %}
         </span>
       {% endif %}
-        &middot;
-        <span class="quotation-date">{{ page.date | date_to_string }}</span>
       </p>
 
       <p>

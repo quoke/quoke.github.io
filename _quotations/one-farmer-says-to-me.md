@@ -7,8 +7,6 @@ layout: quotation
 title: One farmer says to me
 topics:
   - Animal Rights
-  - Veganism
-  - Vegetables
   - Animals
-  - Vegetarianism
+  - Farming
 ---
