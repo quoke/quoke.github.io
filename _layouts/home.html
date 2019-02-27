@@ -14,7 +14,7 @@
       {% assign sortedTopics = site.topics | sort: 'date' | reverse %}
       {% for topic in sortedTopics limit:20 %}
       <span class="topic-link">
-        <a href="{{ topic.url }}">{{ topic.title }}</a>
+        <a href="{{ site.url }}{{ topic.url }}">{{ topic.title }}</a>
       </span>
       {% endfor %}
       <span class="author-link">
@@ -26,7 +26,7 @@
       {% assign sortedAuthors = site.authors | sort: 'date' | reverse %}
       {% for author in sortedAuthors limit:20 %}
       <span class="author-link">
-        <a href="{{ author.url }}">{{ author.title }}</a>
+        <a href="{{ site.url }}{{ author.url }}">{{ author.title }}</a>
       </span>
       {% endfor %}
       <span class="author-link">
@@ -38,7 +38,7 @@
       {% assign sortedSources = site.sources | sort: 'date' | reverse %}
       {% for source in sortedSources limit:20 %}
       <span class="source-link">
-        <a href="{{ source.url }}">{{ source.title }}</a>
+        <a href="{{ site.url }}{{ source.url }}">{{ source.title }}</a>
       </span>
       {% endfor %}
       <span class="source-link">
@@ -50,7 +50,7 @@
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
       {% for quotation in sortedQuotations limit:20 %}
       <span class="quotation-link">
-        <a href="{{ quotation.url }}">{{ quotation.title }}</a>
+        <a href="{{ site.url }}{{ quotation.url }}">{{ quotation.title }}</a>
       </span>
       {% endfor %}
       <span class="quotation-link">
