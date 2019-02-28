@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="stylesheet" href="{{ site.github.url }}/main.css">
+  <link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
   <meta name="google-site-verification" content="cwo7SJgHRGZn64HNxVPjeX-Xa_kKgb-GMfSXQCdZNZ8" />
   
   <!-- Twitter cards -->
@@ -14,7 +15,7 @@
   <meta name="twitter:image" content="https://og-image.now.sh/{{ page.text | truncate: 150 | uri_escape | replace: '?', '%3F' }}.png?theme=light&md=1&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-black-triangle.svg">
 
   <!-- Facebook cards -->
-  <meta property="og:url" content="{{ site.github.url }}{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ site.title }}{% if page.author %} - {{ page.author }}{% endif %}" />
   <meta property="og:description" content="{{ page.text }}" />
