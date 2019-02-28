@@ -13,7 +13,7 @@
         {% assign topicSlug = topic | slugify %}
         {% if topicSlug contains pageTitleSlug %}
           <p class="list-quote">
-            <a href="{{ quote.url }}">{{ quote.text | truncatewords: 42 }}</a>
+            <a href="{{ site.github.url }}{{ quote.url }}">{{ quote.text | truncatewords: 42 }}</a>
           </p>
         {% endif %}
       {% endfor %}

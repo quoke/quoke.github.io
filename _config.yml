@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is an openly editable repository for famous quotations
   about different things in the world.
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "https://quoke.co" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://quoke.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: phocks
 github_username: phocks
 
