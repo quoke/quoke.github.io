@@ -14,8 +14,8 @@
             <!-- Check if author exists in collection -->
             {% assign linkAuthor = false %}
             {% for siteAuthor in site.authors %}
-              {% assign authorTitleSlug = siteAuthor.title | slugify %}
-              {% assign pageAuthorSlug = page.author | slugify %}
+              {% assign authorTitleSlug = siteAuthor.title | slugify: 'latin' %}
+              {% assign pageAuthorSlug = page.author | slugify: 'latin' %}
               {% if authorTitleSlug == pageAuthorSlug %}
                 {% assign linkAuthor = true %}
               {% endif %}
@@ -24,15 +24,15 @@
             <!-- Check if source exists in collection -->
             {% assign linkSource = false %}
             {% for siteSource in site.sources %}
-              {% assign sourceTitleSlug = siteSource.title | slugify %}
-              {% assign pageSourceSlug = page.source | slugify %}
+              {% assign sourceTitleSlug = siteSource.title | slugify: 'latin' %}
+              {% assign pageSourceSlug = page.source | slugify: 'latin' %}
               {% if sourceTitleSlug == pageSourceSlug %}
                 {% assign linkSource = true %}
               {% endif %}
             {% endfor %}
 
             {% if page.author %}
-                <cite class="author">&mdash;{% if linkAuthor %}<a href="{{ site.github.url }}/author/{{ page.author | slugify: 'latin' }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}</cite>{% endif %}{% if page.source %}<cite>, {% if linkSource %}<a href="{{ site.github.url }}/source/{{ page.source | slugify }}">{{ page.source }}</a>{% else %}{{ page.source }}{% endif %}</cite>
+                <cite class="author">&mdash;{% if linkAuthor %}<a href="{{ site.github.url }}/author/{{ page.author | slugify: 'latin' }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}</cite>{% endif %}{% if page.source %}<cite>, {% if linkSource %}<a href="{{ site.github.url }}/source/{{ page.source | slugify: 'latin' }}">{{ page.source }}</a>{% else %}{{ page.source }}{% endif %}</cite>
             {% endif %}
           </blockquote>
         </div>
@@ -48,8 +48,8 @@
 
             <!-- Check if topic exists in topics collection -->
             {% for siteTopic in site.topics %}
-              {% assign topicTitleSlug = siteTopic.title | slugify %}
-              {% assign pageTopicSlug = topic | slugify %}
+              {% assign topicTitleSlug = siteTopic.title | slugify: 'latin' %}
+              {% assign pageTopicSlug = topic | slugify: 'latin' %}
               {% if topicTitleSlug == pageTopicSlug %}
                 {% assign linkTopic = true %}
               {% endif %}
@@ -57,7 +57,7 @@
 
 
             {% if linkTopic %}
-              <span><a href="{{ site.github.url }}/topic/{{ topic | slugify }}">{{ topic }}</a></span>
+              <span><a href="{{ site.github.url }}/topic/{{ topic | slugify: 'latin' }}">{{ topic }}</a></span>
             {% else %}
               <span>{{ topic }}</span>
             {% endif %}
