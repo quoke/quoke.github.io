@@ -40,7 +40,7 @@
 
       <p>
       {% if page.topics %}
-        <span class="quotation-date">{{ page.date | date_to_string }}</span>
+        <span class="quotation-date">Added: {{ page.date | date_to_string }}</span>
         &middot;
         <span class="quotation-tags">
           {% for topic in page.topics %}
