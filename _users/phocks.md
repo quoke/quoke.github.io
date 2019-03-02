@@ -1,8 +1,5 @@
 ---
-name: phocks
-layout: page
-quotes:
-  - and-once-the-storm-is-over
+layout: user
+title: phocks
+date: 2019-03-03
 ---
-
-Hello I am Josh.

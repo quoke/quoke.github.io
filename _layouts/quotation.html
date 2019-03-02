@@ -39,9 +39,14 @@
       </div>
 
       <p>
-      {% if page.topics %}
-        <span class="quotation-date">Added: {{ page.date | date_to_string }}</span>
+      <span class="quotation-date">Added: {{ page.date | date_to_string }}</span>
+      {% if page.user %}
         &middot;
+        <span class="quotation-user">by <a href="{{ site.github.url }}/@{{ page.user }}">@{{ page.user }}</a></span>
+      {% endif %}
+      </p>
+      <p>
+      {% if page.topics %}
         <span class="quotation-tags">
           {% for topic in page.topics %}
             {% assign linkTopic = false %}

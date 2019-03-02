@@ -1,5 +1,6 @@
 .quotation-date,
-.quotation-tags {
+.quotation-tags,
+.quotation-user {
   color: $color-medium-grey;
   margin-right: 4px;
   margin-left: 2px;
@@ -11,7 +12,7 @@
 }
 
 h1.mark {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", sans-serif;
   font-size: 3em;
 }
 
