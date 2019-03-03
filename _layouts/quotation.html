@@ -5,7 +5,7 @@
   {% include nav.html %}
   <main class="quotation">
     <div class="quotation">
-      <h1 class="mark">“</h1>
+      <h1 class="mark">&ldquo;</h1>
 
       <div class="single-quote container">
         <div class="quote-content">
@@ -38,15 +38,17 @@
         </div>
       </div>
 
+      <h1 class="mark end-mark"></h1>
+
       <p>
       <span class="quotation-date">Added: {{ page.date | date_to_string }}</span>
       {% if page.user %}
         &middot;
         <span class="quotation-user">by <a href="{{ site.github.url }}/@{{ page.user }}">@{{ page.user }}</a></span>
       {% endif %}
-      </p>
-      <p>
+      
       {% if page.topics %}
+        &middot;
         <span class="quotation-tags">
           {% for topic in page.topics %}
             {% assign linkTopic = false %}
