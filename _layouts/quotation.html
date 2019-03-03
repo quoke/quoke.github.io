@@ -42,10 +42,11 @@
 
       <p>
       <span class="quotation-date">Added: {{ page.date | date_to_string }}</span>
-      {% if page.user %}
+
+      <!-- {% if page.user %}
         &middot;
         <span class="quotation-user">by <a href="{{ site.github.url }}/@{{ page.user }}">@{{ page.user }}</a></span>
-      {% endif %}
+      {% endif %} -->
       
       {% if page.topics %}
         &middot;
