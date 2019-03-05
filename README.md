@@ -15,7 +15,7 @@ How do I develop locally?
 You'll need to have Jekyll installed. Follow the instruction [in the docs](https://jekyllrb.com/docs/) to get Ruby and Jekyll up and running on your computer. Afterwards simply clone this repo and then run `bundle exec jekyll serve` to serve a local copy. Changes you make to the code will then automatically be rebuilt and served.
 
 How do I add a quote?
--------------------
+---------------------
 
 Simply add a .md (markdown) file in the `/_quotations` directory. The filename should be the first few words of the quotation, all in lowercase and separated by dashes eg. `always-forgive-your-enemies.md`.
 
@@ -36,7 +36,7 @@ topics:
 _Note: in future we may organise this folder into alphabetical subfolders for neatness._
 
 How do I add an author?
----------------------
+-----------------------
 
 Add a .md file to the `/_authors` directory. The filename should be the author's name, all in lowercase and separated by dashes eg. `albert-einstein.md`.
 
