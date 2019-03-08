@@ -3,7 +3,7 @@ Quoke
 
 An open source collection of quotations. See the live site at [quoke.co](https://quoke.co).
 
-Anyone can add a quotation!
+Anyone can add a quote!
 
 Simply fork this repository and enable GitHub Pages in Settings (you'll probably have to delete the CNAME file too) and then you'll have a live copy of the site at `https://<your username>.github.io/quoke.github.io`.
 
