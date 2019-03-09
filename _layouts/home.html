@@ -12,7 +12,7 @@
   <main class="home">
     <section class="home-section">
       {% assign sortedTopics = site.topics | sort: 'date' | reverse %}
-      {% for topic in sortedTopics limit:20 %}
+      {% for topic in sortedTopics limit:40 %}
       <span class="topic-link">
         <a href="{{ site.github.url }}{{ topic.url }}">{{ topic.title }}</a>
       </span>
@@ -24,7 +24,7 @@
       <hr class="vr" />
 
       {% assign sortedAuthors = site.authors | sort: 'date' | reverse %}
-      {% for author in sortedAuthors limit:20 %}
+      {% for author in sortedAuthors limit:40 %}
       <span class="author-link">
         <a href="{{ site.github.url }}{{ author.url }}">{{ author.title }}</a>
       </span>
@@ -36,7 +36,7 @@
       <hr class="vr" />
     
       {% assign sortedSources = site.sources | sort: 'date' | reverse %}
-      {% for source in sortedSources limit:20 %}
+      {% for source in sortedSources limit:40 %}
       <span class="source-link">
         <a href="{{ site.github.url }}{{ source.url }}">{{ source.title }}</a>
       </span>
@@ -48,7 +48,7 @@
       <hr class="vr" />
 
       {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
-      {% for quotation in sortedQuotations limit:20 %}
+      {% for quotation in sortedQuotations limit:40 %}
       <span class="quotation-link">
         <a href="{{ site.github.url }}{{ quotation.url }}">{{ quotation.title }}</a>
       </span>
