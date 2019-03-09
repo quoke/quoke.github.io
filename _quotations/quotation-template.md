@@ -9,5 +9,4 @@ source: Book or Movie title etc.
 topics:
   - Love
   - Life
-user: username
 ---
