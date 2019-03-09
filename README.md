@@ -20,4 +20,6 @@ You'll need to have Jekyll installed. Follow the instructions [in the docs](http
 Notes
 -----
 
+Please only add notable quotations.
+
 Quoke was originally developed by [@phocks](https://github.com/phocks).
