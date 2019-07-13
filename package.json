@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/quoke/quoke.github.io/issues"
   },
-  "homepage": "https://github.com/quoke/quoke.github.io#readme"
+  "homepage": "https://github.com/quoke/quoke.github.io#readme",
+  "dependencies": {
+    "spectre.css": "^0.5.8"
+  }
 }
