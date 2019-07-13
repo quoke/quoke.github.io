@@ -8,5 +8,4 @@ layout: quotation
 topics:
   - Meat
   - Animal Rights
-user: phocks
 ---
