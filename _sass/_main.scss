@@ -2,6 +2,7 @@
 @import "normalize";
 
 // Some variables
+$color-background: #fffff8;
 $color-light-grey: #ababab;
 $color-medium-grey: #676767;
 $color-dark-grey: #434343;
@@ -13,7 +14,9 @@ $quote-line-height: 1.6em;
 body {
   font-family: "Times New Roman", Times, serif;
   margin: 0;
-  font-size: 18px;
+  padding: 0;
+  margin: auto;
+  background-color: $color-background;
 }
 
 h1,
