@@ -1,10 +1,10 @@
 nav {
-  background-color: transparent;
+  background-color: rgb(53, 60, 65);
   padding: 0px $page-gutter;
   color: #ddd;
 
   a {
-    color: #ddd;
+    color: #fff;
     text-decoration: none;
     border: none;
   }
@@ -14,7 +14,7 @@ nav {
     display: inline-block;
     margin-right: 10px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   span a {
