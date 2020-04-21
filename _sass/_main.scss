@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 
-
-
 // Some variables
 $color-background: #fffff8;
 $color-light-grey: #ababab;
@@ -12,89 +10,89 @@ $quote-font-size: 2em;
 $quote-font-size-mobile: 1.6em;
 $quote-line-height: 1.6em;
 
-// body {
-//   font-family: "Times New Roman", Times, serif;
-//   margin: 0;
-//   padding: 0;
-//   margin: auto;
-//   background-color: $color-background;
-// }
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  background-color: $color-background;
+}
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: "Press Start 2P", sans-serif;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Press Start 2P", sans-serif;
+}
 
-// main {
-//   padding: 0 $page-gutter;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-bottom: 32px;
-//   text-align: center;
+main {
+  padding: 0 $page-gutter;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 32px;
+  text-align: center;
 
-//   a {
-//     color: black;
-//     text-decoration: none;
-//     border-bottom: 1px dotted #ccc;
-//   }
+  a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+  }
 
-//   .container {
-//     max-width: 960px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
+  .container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
-// hr.vr {
-//   width: 1px;
-//   height: 3em;
-//   background: black;
-//   border: none;
-//   margin-bottom: 1.5em;
-//   margin-top: 1.5em;
-// }
+hr.vr {
+  width: 1px;
+  height: 3em;
+  background: black;
+  border: none;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
 
-// .quotation-link,
-// .author-link,
-// .source-link,
-// .topic-link {
-//   display: inline-block;
-//   font-size: 2em;
-//   margin-right: 16px;
-//   line-height: 1.8em;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   max-width: 100%;
-// }
+.quotation-link,
+.author-link,
+.source-link,
+.topic-link {
+  display: inline-block;
+  font-size: 2em;
+  margin-right: 16px;
+  line-height: 1.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
 
-// .list-quote {
-//   font-size: 2em;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
+.list-quote {
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-// @media screen and (max-width: 600px) {
-//   .list-quote {
-//     font-size: 1.6em;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//   }
-// }
+@media screen and (max-width: 600px) {
+  .list-quote {
+    font-size: 1.6em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 
-// p {
-//   line-height: 1.5em;
-// }
+p {
+  line-height: 1.5em;
+}
 
 // @import "utils";
-// @import "nav";
+@import "nav";
 // @import "footer";
-// @import "quotation";
-// @import "home";
+@import "quotation";
+@import "home";
 // @import "responsive";

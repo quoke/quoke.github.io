@@ -25,11 +25,13 @@ twitter_username: phocks
 github_username: phocks
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
 permalink: /quotations/:title:output_ext
+sass:
+    sass_dir: _sass
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -47,7 +49,7 @@ permalink: /quotations/:title:output_ext
 collections:
   quotations:
     output: true
-    permalink: /quote/:slug
+    permalink: /quote/:name
   users:
     output: true
     permalink: /@:name
