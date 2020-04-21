@@ -1,8 +1,5 @@
 ---
+# Front matter is required for the main scss file only
 ---
-
-// @import
-//   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-//   "minima/initialize";
 
 @import "main"
