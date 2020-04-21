@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-@import "normalize";
 
 // Some variables
-$color-background: #fffff8;
+$color-background: #ffffff;
 $color-light-grey: #ababab;
 $color-medium-grey: #676767;
 $color-dark-grey: #434343;
@@ -91,9 +90,9 @@ p {
   line-height: 1.5em;
 }
 
-@import "utils";
+// @import "utils";
 @import "nav";
-@import "footer";
+// @import "footer";
 @import "quotation";
 @import "home";
-@import "responsive";
+// @import "responsive";
