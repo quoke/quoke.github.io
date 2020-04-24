@@ -3,75 +3,80 @@
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <header>
-      <h1 class="text-hero">Quoke</h1>
-    </header>
-
-    <main class="home">
-      <section class="home-section">
-        <hr class="vr" />
-
-        {% assign sortedTopics = site.topics | sort: 'date' | reverse %} {% for
-        topic in sortedTopics limit:40 %}
-        <span class="topic-link">
-          <a href="{{ site.github.url }}{{ topic.url }}">{{ topic.title }}</a>
-        </span>
-        {% endfor %}
-        <span class="author-link">
-          <a href="https://github.com/quoke/quoke.github.io/tree/master/_topics"
-            >Add topic</a
-          >
-        </span>
-
-        <hr class="vr" />
-
-        {% assign sortedAuthors = site.authors | sort: 'date' | reverse %} {%
-        for author in sortedAuthors limit:40 %}
-        <span class="author-link">
-          <a href="{{ site.github.url }}{{ author.url }}">{{ author.title }}</a>
-        </span>
-        {% endfor %}
-        <span class="author-link">
-          <a
-            href="https://github.com/quoke/quoke.github.io/tree/master/_authors"
-            >Add author</a
-          >
-        </span>
-
-        <hr class="vr" />
-
-        {% assign sortedSources = site.sources | sort: 'date' | reverse %} {%
-        for source in sortedSources limit:40 %}
-        <span class="source-link">
-          <a href="{{ site.github.url }}{{ source.url }}">{{ source.title }}</a>
-        </span>
-        {% endfor %}
-        <span class="source-link">
-          <a
-            href="https://github.com/quoke/quoke.github.io/tree/master/_sources"
-            >Add source</a
-          >
-        </span>
-
-        <hr class="vr" />
-
-        {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
-        {% for quotation in sortedQuotations limit:40 %}
-        <span class="quotation-link">
-          <a href="{{ site.github.url }}{{ quotation.url }}"
-            >{{ quotation.title }}</a
-          >
-        </span>
-        {% endfor %}
-        <span class="quotation-link">
-          <a
-            href="https://github.com/quoke/quoke.github.io/tree/master/_quotations"
-            >Add quotation</a
-          >
-        </span>
-      </section>
-    </main>
+    
+    <main></main>
 
     {% include foot.html %}
   </body>
 </html>
+
+
+
+<!-- <header>
+  <h1 class="text-hero">Quoke</h1>
+</header>
+
+<main class="home">
+  <section class="home-section">
+    <hr class="vr" />
+
+    {% assign sortedTopics = site.topics | sort: 'date' | reverse %} {% for
+    topic in sortedTopics limit:40 %}
+    <span class="topic-link">
+      <a href="{{ site.github.url }}{{ topic.url }}">{{ topic.title }}</a>
+    </span>
+    {% endfor %}
+    <span class="author-link">
+      <a href="https://github.com/quoke/quoke.github.io/tree/master/_topics"
+        >Add topic</a
+      >
+    </span>
+
+    <hr class="vr" />
+
+    {% assign sortedAuthors = site.authors | sort: 'date' | reverse %} {%
+    for author in sortedAuthors limit:40 %}
+    <span class="author-link">
+      <a href="{{ site.github.url }}{{ author.url }}">{{ author.title }}</a>
+    </span>
+    {% endfor %}
+    <span class="author-link">
+      <a
+        href="https://github.com/quoke/quoke.github.io/tree/master/_authors"
+        >Add author</a
+      >
+    </span>
+
+    <hr class="vr" />
+
+    {% assign sortedSources = site.sources | sort: 'date' | reverse %} {%
+    for source in sortedSources limit:40 %}
+    <span class="source-link">
+      <a href="{{ site.github.url }}{{ source.url }}">{{ source.title }}</a>
+    </span>
+    {% endfor %}
+    <span class="source-link">
+      <a
+        href="https://github.com/quoke/quoke.github.io/tree/master/_sources"
+        >Add source</a
+      >
+    </span>
+
+    <hr class="vr" />
+
+    {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+    {% for quotation in sortedQuotations limit:40 %}
+    <span class="quotation-link">
+      <a href="{{ site.github.url }}{{ quotation.url }}"
+        >{{ quotation.title }}</a
+      >
+    </span>
+    {% endfor %}
+    <span class="quotation-link">
+      <a
+        href="https://github.com/quoke/quoke.github.io/tree/master/_quotations"
+        >Add quotation</a
+      >
+    </span>
+  </section>
+</main> -->

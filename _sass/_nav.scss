@@ -1,23 +1,20 @@
-nav {
-  background-color: rgb(53, 60, 65);
+nav.site-navigation {
   padding: 0px $page-gutter;
-  color: #ddd;
+  color: rgb(255, 255, 255);
+  background-image: url(/assets/img/leaves.jpg);
 
-  a {
-    color: #fff;
+  .flex-container {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+  }
+
+  a.branding {
+    font-size: 32px;
+    color: rgb(230, 230, 230);
     text-decoration: none;
     border: none;
-  }
-
-  h2 {
     font-family: "Press Start 2P", sans-serif;
     display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 7px;
-  }
-
-  span a {
-    text-decoration: underline;
   }
 }
