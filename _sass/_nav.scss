@@ -11,10 +11,12 @@ nav.site-navigation {
 
   a.branding {
     font-size: 32px;
-    color: rgb(230, 230, 230);
+    color: rgba(255, 255, 255, 1.0);
     text-decoration: none;
     border: none;
     font-family: "Press Start 2P", sans-serif;
     display: inline-block;
+    position: relative;
+    top: 2px;
   }
 }

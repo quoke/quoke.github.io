@@ -1,6 +1,15 @@
-h1.text-hero {
-  font-size: 3em;
-  text-transform: uppercase;
-  font-family: "Press Start 2P", sans-serif;
-  text-align: center;
+.hero {
+  font-family: "Playfair Display", serif;
+  min-height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding-left: $page-gutter;
+  padding-right: $page-gutter;
+
+  .subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+  }
 }
