@@ -5,8 +5,8 @@ $color-light-grey: #ababab;
 $color-medium-grey: #676767;
 $color-dark-grey: #434343;
 $page-gutter: 15px;
-$quote-font-size: 2em;
-$quote-font-size-mobile: 1.6em;
+$quote-font-size: 2rem;
+$quote-font-size-mobile: 1.6rem;
 $quote-line-height: 1.6em;
 
 body {
@@ -52,6 +52,10 @@ hr.vr {
   border: none;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
+}
+
+blockquote {
+  margin: 0;
 }
 
 .quotation-link,
