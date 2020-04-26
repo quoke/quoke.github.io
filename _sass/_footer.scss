@@ -1,4 +1,13 @@
 footer.site-footer {
+  color: #666;
+  font-size: 14px;
   min-height: 64px;
   background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  text-align: center;
 }

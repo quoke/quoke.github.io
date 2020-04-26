@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Press+Start+2P&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Press+Start+2P&family=Roboto:ital@0;1&family=Roboto&display=swap");
 // Some variables
 $color-background: #ffffff;
 $color-light-grey: #ababab;
@@ -10,7 +10,7 @@ $quote-font-size-mobile: 1.6rem;
 $quote-line-height: 1.6em;
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
   margin: auto;
