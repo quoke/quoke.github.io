@@ -29,7 +29,7 @@ github_username: phocks
 theme: minima
 plugins:
   - jekyll-feed
-permalink: /quotations/:title:output_ext
+permalink: /q/:title:output_ext
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
