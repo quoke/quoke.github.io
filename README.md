@@ -17,7 +17,7 @@ Can I develop locally?
 
 Yes you can!
 
-You'll need to have Jekyll installed. Follow the instructions [in the docs](https://jekyllrb.com/docs/) to get Ruby and Jekyll up and running on your computer. Afterwards simply clone this repo and then run `bundle exec jekyll serve` to serve a local copy. Changes you make to the code will then automatically be rebuilt and served.
+You'll need to have Jekyll installed. Follow the instructions [in the docs](https://jekyllrb.com/docs/) to get Ruby and Jekyll up and running on your computer. Afterwards simply clone this repo and then run`bundle install` then `bundle exec jekyll serve` to serve a local copy. Changes you make to the code will then automatically be rebuilt and served.
 
 Notes
 -----
