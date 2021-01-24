@@ -1,23 +1,9 @@
 nav {
-  background-color: rgb(53, 60, 65);
   padding: 0px $page-gutter;
-  color: #ddd;
+  border-bottom: 1px solid black;
 
   a {
-    color: #fff;
     text-decoration: none;
-    border: none;
-  }
-
-  h2 {
-    font-family: "Press Start 2P", sans-serif;
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 7px;
-  }
-
-  span a {
-    text-decoration: underline;
+    color: black;
   }
 }

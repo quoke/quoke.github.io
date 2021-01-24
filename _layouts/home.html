@@ -3,13 +3,13 @@
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <header>
+     <!-- <header>
       <h1 class="text-hero">Quoke</h1>
-    </header>
+    </header>  -->
 
     <main class="home">
       <section class="home-section">
-        <hr class="vr" />
+        <!-- <hr class="vr" /> -->
 
         {% assign sortedTopics = site.topics | sort: 'date' | reverse %} {% for
         topic in sortedTopics limit:40 %}
@@ -23,7 +23,7 @@
           >
         </span>
 
-        <hr class="vr" />
+        <!-- <hr class="vr" /> -->
 
         {% assign sortedAuthors = site.authors | sort: 'date' | reverse %} {%
         for author in sortedAuthors limit:40 %}
@@ -38,7 +38,7 @@
           >
         </span>
 
-        <hr class="vr" />
+        <!-- <hr class="vr" /> -->
 
         {% assign sortedSources = site.sources | sort: 'date' | reverse %} {%
         for source in sortedSources limit:40 %}
@@ -53,7 +53,7 @@
           >
         </span>
 
-        <hr class="vr" />
+        <!-- <hr class="vr" /> -->
 
         {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
         {% for quotation in sortedQuotations limit:40 %}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
 
 // Some variables
 $color-background: #ffffff;
@@ -11,7 +11,7 @@ $quote-font-size-mobile: 1.6em;
 $quote-line-height: 1.6em;
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Fraunces', serif;
   margin: 0;
   padding: 0;
   margin: auto;
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Press Start 2P", sans-serif;
+  
 }
 
 main {
@@ -32,7 +32,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 32px;
-  text-align: center;
+  text-align: left;
 
   a {
     color: black;
