@@ -1,3 +1,9 @@
+main.quotation {
+  .meta {
+    text-align: center;
+  }
+}
+
 .quotation-date,
 .quotation-tags,
 .quotation-user {
@@ -11,16 +17,11 @@
   }
 }
 
-h1.mark {
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 3em;
-}
-
 h1.end-mark {
   margin-top: 1.5em;
 }
 
-blockquote {
+.quote-content blockquote {
   margin-left: 0;
   margin-right: 0;
   font-size: $quote-font-size;
@@ -30,12 +31,16 @@ blockquote {
     font-size: $quote-font-size-mobile;
   }
 
-  cite.author {
-    font-style: normal;
-    white-space: nowrap;
-  }
+  footer {
+    margin-top: 1em;
 
-  cite {
-    font-size: 0.9em;
+    cite.author {
+      font-style: normal;
+      white-space: nowrap;
+    }
+
+    cite {
+      font-size: 0.9em;
+    }
   }
 }
