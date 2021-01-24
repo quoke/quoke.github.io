@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap");
 
 // Some variables
 $color-background: #ffffff;
@@ -11,7 +11,7 @@ $quote-font-size-mobile: 1.6em;
 $quote-line-height: 1.6em;
 
 body {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   margin: 0;
   padding: 0;
   margin: auto;
@@ -19,13 +19,10 @@ body {
   font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  
+.author h1,
+.source h1,
+.topic h1 {
+  font-size: 3em;
 }
 
 main {
