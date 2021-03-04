@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
 
 // Some variables
 $color-background: #ffffff;
@@ -11,12 +13,14 @@ $quote-font-size-mobile: 1.6em;
 $quote-line-height: 1.6em;
 
 body {
-  font-family: "Fraunces", serif;
+  font-family: "PT Mono", monospace;
   margin: 0;
   padding: 0;
-  margin: auto;
+  // margin: auto;
   background-color: $color-background;
   font-size: 16px;
+  max-width: 720px;
+  line-height: 1.6em;
 }
 
 .author h1,
@@ -86,6 +90,20 @@ hr.vr {
 
 p {
   line-height: 1.5em;
+}
+
+.single-quotation {
+  .date {
+    font-size: 11px;
+    font-family: "Nova Mono", monospace;
+    color: #666;
+  }
+
+  blockquote,
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 // @import "utils";
