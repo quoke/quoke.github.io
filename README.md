@@ -3,8 +3,6 @@ Quoke
 
 An open source collection of quotations. See the live site at [quoke.co](https://quoke.co).
 
-(Note: We are now at [this repo](https://github.com/phocks/quoke).)
-
 Anyone can add a quote!
 -----------------------
 
