@@ -2,7 +2,7 @@
   "name": "quoke.github.io",
   "description": "Quoke =====",
   "version": "0.1.0",
-  "main": "src/index.js",
+  "main": "_scripts/index.js",
   "scripts": {
     "watch": "bundle exec jekyll serve",
     "build": "npm run build:scripts && bundle exec jekyll build",

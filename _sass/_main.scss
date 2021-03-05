@@ -106,6 +106,15 @@ p {
   }
 }
 
+.pagination {
+  font-size: 11px;
+  font-family: "Nova Mono", monospace;
+  
+  a {
+    color: #666;
+  }
+}
+
 // @import "utils";
 @import "nav";
 // @import "footer";
