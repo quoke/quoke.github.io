@@ -43,6 +43,9 @@ permalink: /quotations/:title:output_ext
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# include:
+#   - build/_snowpack/pkg/
+
 # A few custom collections
 collections:
   quotations:

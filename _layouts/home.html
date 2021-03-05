@@ -15,7 +15,7 @@
       <div class="single-quotation">
         <div class="date">{{ quotation.date | date_to_long_string}}</div>
         <figure class="quote">
-          <blockquote>{{ quotation.text }}</blockquote>
+          <blockquote><q>{{ quotation.text }}</q></blockquote>
           <figcaption>
             <footer>
               &mdash; {{ quotation.author }}{% if quotation.source %},
