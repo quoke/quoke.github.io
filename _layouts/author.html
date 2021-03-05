@@ -3,7 +3,7 @@
 {% include head.html %}
 <body>
   {% include nav.html %}
-<main>
+<main class="author">
   <section class="container">
     <h1>{{ page.title }}</h1>
     {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}

@@ -1,84 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
-<body>
-  {% include nav.html %}
-  <main class="quotation">
-    <div class="quotation">
-      <h1 class="mark">&ldquo;</h1>
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
+    <main class="quotation">
 
-      <div class="single-quote container">
-        <div class="quote-content">
-          <blockquote>
-            {{ page.text }}
-            <!-- Check if author exists in collection -->
-            {% assign linkAuthor = false %}
-            {% for siteAuthor in site.authors %}
-              {% assign authorTitleSlug = siteAuthor.title | slugify: 'latin' %}
-              {% assign pageAuthorSlug = page.author | slugify: 'latin' %}
-              {% if authorTitleSlug == pageAuthorSlug %}
-                {% assign linkAuthor = true %}
+      <div class="single-quotation">
+        <div class="date">{{ page.date | date_to_long_string}}</div>
+        <figure class="quote">
+          <blockquote><q>{{ page.text }}</q></blockquote>
+          <figcaption>
+            <footer>
+              &mdash; {{ page.author }}{% if page.source %},
+              <cite>{{page.source }}</cite>
               {% endif %}
-            {% endfor %}
-
-            <!-- Check if source exists in collection -->
-            {% assign linkSource = false %}
-            {% for siteSource in site.sources %}
-              {% assign sourceTitleSlug = siteSource.title | slugify: 'latin' %}
-              {% assign pageSourceSlug = page.source | slugify: 'latin' %}
-              {% if sourceTitleSlug == pageSourceSlug %}
-                {% assign linkSource = true %}
-              {% endif %}
-            {% endfor %}
-
-            {% if page.author %}
-                <cite class="author">&mdash;{% if linkAuthor %}<a href="{{ site.github.url }}/author/{{ page.author | slugify: 'latin' }}"><b>{{ page.author }}</b></a>{% else %}<b>{{ page.author }}</b>{% endif %}</cite>{% endif %}{% if page.source %}<cite>, {% if linkSource %}<a href="{{ site.github.url }}/source/{{ page.source | slugify: 'latin' }}">{{ page.source }}</a>{% else %}{{ page.source }}{% endif %}</cite>
-            {% endif %}
-          </blockquote>
-        </div>
+            </footer>
+          </figcaption>
+        </figure>
       </div>
 
-      <h1 class="mark end-mark"></h1>
 
-      <p>
-      <span class="quotation-date">Added: {{ page.date | date_to_string }}</span>
-
-      <!-- {% if page.user %}
-        &middot;
-        <span class="quotation-user">by <a href="{{ site.github.url }}/@{{ page.user }}">@{{ page.user }}</a></span>
-      {% endif %} -->
-      
-      {% if page.topics %}
-        &middot;
-        <span class="quotation-tags">
-          {% for topic in page.topics %}
-            {% assign linkTopic = false %}
-
-            <!-- Check if topic exists in topics collection -->
-            {% for siteTopic in site.topics %}
-              {% assign topicTitleSlug = siteTopic.title | slugify: 'latin' %}
-              {% assign pageTopicSlug = topic | slugify: 'latin' %}
-              {% if topicTitleSlug == pageTopicSlug %}
-                {% assign linkTopic = true %}
-              {% endif %}
-            {% endfor %}
-
-
-            {% if linkTopic %}
-              <span><a href="{{ site.github.url }}/topic/{{ topic | slugify: 'latin' }}">{{ topic }}</a></span>
-            {% else %}
-              <span>{{ topic }}</span>
-            {% endif %}
-          {% endfor %}
-        </span>
+      {% assign sortedQuotations = site.quotations | sort: 'date' | reverse %}
+      {% for quotation in sortedQuotations %} 
+      {% if quotation.title == page.title %}
+        {% assign item_index = forloop.index %}
       {% endif %}
-      </p>
-
-      <p>
-          <a href="https://github.com/quoke/quoke.github.io/blob/master/{{page.relative_path}}">Edit this quote</a>
-      </p>
-    </div>
-  </main>
-  {% include foot.html %}
-</body>
+      {% endfor %}
+      {% assign prev_index = item_index | minus: 1 %}
+      {% assign next_index = item_index | plus: 1 %}
+      {% for quotation in sortedQuotations %} 
+       {% if forloop.index == next_index %}
+        <div class="pagination">
+          <a href="{{ site.github.url }}{{ quotation.url }}">next quote</a>
+        </div>
+      {% endif %} 
+      {% endfor %}
+    </main>
+    {% include foot.html %}
+  </body>
 </html>
