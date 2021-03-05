@@ -2,7 +2,7 @@ import { terser } from "rollup-plugin-terser";
 import path from "path";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import babel from "rollup-plugin-babel";
+import { babel } from '@rollup/plugin-babel';
 import glob from "glob";
 
 const scriptPattern = path.resolve(__dirname, "_scripts/**/!(_)*.js");
